@@ -1,0 +1,1138 @@
+INFO 2025-03-28 13:17:46,137 autoreload 9608 14236 Watching for file changes with StatReloader
+INFO 2025-03-28 13:18:21,720 autoreload 15008 4404 Watching for file changes with StatReloader
+INFO 2025-03-28 13:18:23,937 basehttp 15008 888 "GET /polls/ HTTP/1.1" 200 22110
+WARNING 2025-03-28 13:18:26,267 log 15008 888 Not Found: /favicon.ico
+WARNING 2025-03-28 13:18:26,286 basehttp 15008 888 "GET /favicon.ico HTTP/1.1" 404 3821
+INFO 2025-03-28 13:18:27,098 basehttp 15008 888 "GET /polls/20/delete/ HTTP/1.1" 200 9245
+INFO 2025-03-28 13:18:28,539 basehttp 15008 888 "POST /polls/20/delete/ HTTP/1.1" 302 0
+INFO 2025-03-28 13:18:28,549 basehttp 15008 888 "GET /polls/ HTTP/1.1" 200 17657
+INFO 2025-03-28 13:18:31,469 basehttp 15008 888 "GET /polls/19/delete/ HTTP/1.1" 200 9265
+INFO 2025-03-28 13:18:32,675 basehttp 15008 888 "POST /polls/19/delete/ HTTP/1.1" 302 0
+INFO 2025-03-28 13:18:32,685 basehttp 15008 888 "GET /polls/ HTTP/1.1" 200 12915
+INFO 2025-03-28 13:18:33,985 basehttp 15008 888 "GET /polls/create/ HTTP/1.1" 200 21473
+INFO 2025-03-28 13:19:43,284 aws_utils 15008 888 Attempting to create AWS clients
+INFO 2025-03-28 13:19:43,284 aws_utils 15008 888 AWS_ACCESS_KEY_ID: ASIATUYJP7SUDGC6MNID
+INFO 2025-03-28 13:19:43,285 aws_utils 15008 888 AWS_SECRET_ACCESS_KEY: H3m19mpecNdwa5oakanO9texm42pW9iRiRU/CkrR
+INFO 2025-03-28 13:19:43,285 aws_utils 15008 888 AWS_REGION: eu-west-1
+INFO 2025-03-28 13:19:43,285 aws_utils 15008 888 AWS_SNS_TOPIC_ARN: arn:aws:sns:eu-west-1:250738637992:poll-notifications
+INFO 2025-03-28 13:19:43,286 aws_utils 15008 888 AWS_LAMBDA_FUNCTION_ARN: arn:aws:lambda:eu-west-1:250738637992:function:pollNotificationLambda
+INFO 2025-03-28 13:19:44,837 aws_utils 15008 888 SNS notification sent for poll: asdasdasd
+INFO 2025-03-28 13:19:44,840 aws_utils 15008 888 Attempting to create AWS clients
+INFO 2025-03-28 13:19:44,840 aws_utils 15008 888 AWS_ACCESS_KEY_ID: ASIATUYJP7SUDGC6MNID
+INFO 2025-03-28 13:19:44,841 aws_utils 15008 888 AWS_SECRET_ACCESS_KEY: H3m19mpecNdwa5oakanO9texm42pW9iRiRU/CkrR
+INFO 2025-03-28 13:19:44,841 aws_utils 15008 888 AWS_REGION: eu-west-1
+INFO 2025-03-28 13:19:44,841 aws_utils 15008 888 AWS_SNS_TOPIC_ARN: arn:aws:sns:eu-west-1:250738637992:poll-notifications
+INFO 2025-03-28 13:19:44,842 aws_utils 15008 888 AWS_LAMBDA_FUNCTION_ARN: arn:aws:lambda:eu-west-1:250738637992:function:pollNotificationLambda
+INFO 2025-03-28 13:19:46,044 aws_utils 15008 888 Lambda function invoked for poll: asdasdasd
+INFO 2025-03-28 13:19:46,048 basehttp 15008 888 "POST /polls/create/ HTTP/1.1" 302 0
+INFO 2025-03-28 13:19:46,060 basehttp 15008 888 "GET /polls/ HTTP/1.1" 200 18083
+INFO 2025-03-28 13:21:23,751 autoreload 15008 4404 E:\Software\Django\online_voting\voting_app\forms.py changed, reloading.
+INFO 2025-03-28 13:21:25,144 autoreload 8800 8640 Watching for file changes with StatReloader
+INFO 2025-03-28 13:21:34,175 autoreload 8800 8640 E:\Software\Django\online_voting\voting_app\forms.py changed, reloading.
+INFO 2025-03-28 13:21:35,869 autoreload 13600 13292 Watching for file changes with StatReloader
+INFO 2025-03-28 13:21:40,818 autoreload 13600 13292 E:\Software\Django\online_voting\voting_app\forms.py changed, reloading.
+INFO 2025-03-28 13:21:42,434 autoreload 8908 9668 Watching for file changes with StatReloader
+INFO 2025-03-28 13:21:47,208 autoreload 8908 9668 E:\Software\Django\online_voting\voting_app\forms.py changed, reloading.
+INFO 2025-03-28 13:21:48,803 autoreload 2436 7156 Watching for file changes with StatReloader
+INFO 2025-03-28 13:21:50,765 autoreload 2436 7156 E:\Software\Django\online_voting\voting_app\forms.py changed, reloading.
+INFO 2025-03-28 13:21:52,164 autoreload 11728 15440 Watching for file changes with StatReloader
+INFO 2025-03-28 13:22:14,866 autoreload 11728 15440 E:\Software\Django\online_voting\voting_app\models.py changed, reloading.
+INFO 2025-03-28 13:22:16,255 autoreload 6432 3080 Watching for file changes with StatReloader
+INFO 2025-03-28 13:22:17,892 autoreload 6432 3080 E:\Software\Django\online_voting\voting_app\models.py changed, reloading.
+INFO 2025-03-28 13:22:19,427 autoreload 9292 10808 Watching for file changes with StatReloader
+INFO 2025-03-28 13:22:48,848 autoreload 9292 10808 E:\Software\Django\online_voting\voting_app\s3_utils.py changed, reloading.
+INFO 2025-03-28 13:22:50,136 autoreload 2180 9652 Watching for file changes with StatReloader
+INFO 2025-03-28 13:22:57,007 autoreload 2180 9652 E:\Software\Django\online_voting\voting_app\s3_utils.py changed, reloading.
+INFO 2025-03-28 13:22:58,948 autoreload 8604 624 Watching for file changes with StatReloader
+INFO 2025-03-28 13:23:00,613 autoreload 8604 624 E:\Software\Django\online_voting\voting_app\s3_utils.py changed, reloading.
+INFO 2025-03-28 13:23:01,963 autoreload 16284 15912 Watching for file changes with StatReloader
+INFO 2025-03-28 13:23:15,862 autoreload 13992 3836 Watching for file changes with StatReloader
+INFO 2025-03-28 13:23:32,034 autoreload 1892 13984 Watching for file changes with StatReloader
+INFO 2025-03-28 13:23:58,653 basehttp 16284 2256 "GET /polls/21/delete/ HTTP/1.1" 200 9255
+INFO 2025-03-28 13:23:59,880 basehttp 16284 2256 "POST /polls/21/delete/ HTTP/1.1" 302 0
+INFO 2025-03-28 13:23:59,893 basehttp 16284 2256 "GET /polls/ HTTP/1.1" 200 12915
+INFO 2025-03-28 13:24:08,057 basehttp 16284 2256 "GET /polls/create/ HTTP/1.1" 200 21473
+INFO 2025-03-28 13:24:43,076 forms 16284 2256 PollForm save method called
+INFO 2025-03-28 13:24:43,080 forms 16284 2256 Image in form save: None
+INFO 2025-03-28 13:24:43,116 aws_utils 16284 2256 Attempting to create AWS clients
+INFO 2025-03-28 13:24:43,118 aws_utils 16284 2256 AWS_ACCESS_KEY_ID: ASIATUYJP7SUDGC6MNID
+INFO 2025-03-28 13:24:43,119 aws_utils 16284 2256 AWS_SECRET_ACCESS_KEY: H3m19mpecNdwa5oakanO9texm42pW9iRiRU/CkrR
+INFO 2025-03-28 13:24:43,119 aws_utils 16284 2256 AWS_REGION: eu-west-1
+INFO 2025-03-28 13:24:43,119 aws_utils 16284 2256 AWS_SNS_TOPIC_ARN: arn:aws:sns:eu-west-1:250738637992:poll-notifications
+INFO 2025-03-28 13:24:43,119 aws_utils 16284 2256 AWS_LAMBDA_FUNCTION_ARN: arn:aws:lambda:eu-west-1:250738637992:function:pollNotificationLambda
+INFO 2025-03-28 13:24:44,649 aws_utils 16284 2256 SNS notification sent for poll: please
+INFO 2025-03-28 13:24:44,652 aws_utils 16284 2256 Attempting to create AWS clients
+INFO 2025-03-28 13:24:44,654 aws_utils 16284 2256 AWS_ACCESS_KEY_ID: ASIATUYJP7SUDGC6MNID
+INFO 2025-03-28 13:24:44,655 aws_utils 16284 2256 AWS_SECRET_ACCESS_KEY: H3m19mpecNdwa5oakanO9texm42pW9iRiRU/CkrR
+INFO 2025-03-28 13:24:44,656 aws_utils 16284 2256 AWS_REGION: eu-west-1
+INFO 2025-03-28 13:24:44,657 aws_utils 16284 2256 AWS_SNS_TOPIC_ARN: arn:aws:sns:eu-west-1:250738637992:poll-notifications
+INFO 2025-03-28 13:24:44,657 aws_utils 16284 2256 AWS_LAMBDA_FUNCTION_ARN: arn:aws:lambda:eu-west-1:250738637992:function:pollNotificationLambda
+INFO 2025-03-28 13:24:45,891 aws_utils 16284 2256 Lambda function invoked for poll: please
+INFO 2025-03-28 13:24:45,894 basehttp 16284 2256 "POST /polls/create/ HTTP/1.1" 302 0
+INFO 2025-03-28 13:24:45,904 basehttp 16284 2256 "GET /polls/ HTTP/1.1" 200 18057
+INFO 2025-03-28 13:27:31,729 autoreload 1892 13984 E:\Software\Django\online_voting\voting_app\views.py changed, reloading.
+INFO 2025-03-28 13:27:32,287 autoreload 16284 15912 E:\Software\Django\online_voting\voting_app\views.py changed, reloading.
+INFO 2025-03-28 13:27:33,239 autoreload 12960 14788 Watching for file changes with StatReloader
+INFO 2025-03-28 13:27:33,796 autoreload 13384 9340 Watching for file changes with StatReloader
+INFO 2025-03-28 13:31:27,027 autoreload 12960 14788 E:\Software\Django\online_voting\voting_app\s3_utils.py changed, reloading.
+INFO 2025-03-28 13:31:27,150 autoreload 13384 9340 E:\Software\Django\online_voting\voting_app\s3_utils.py changed, reloading.
+INFO 2025-03-28 13:31:28,545 autoreload 16044 15508 Watching for file changes with StatReloader
+INFO 2025-03-28 13:31:28,641 autoreload 15124 16140 Watching for file changes with StatReloader
+INFO 2025-03-28 13:31:30,156 autoreload 16044 15508 E:\Software\Django\online_voting\voting_app\s3_utils.py changed, reloading.
+INFO 2025-03-28 13:31:30,230 autoreload 15124 16140 E:\Software\Django\online_voting\voting_app\s3_utils.py changed, reloading.
+INFO 2025-03-28 13:31:31,899 autoreload 3772 6544 Watching for file changes with StatReloader
+INFO 2025-03-28 13:31:32,065 autoreload 1116 10756 Watching for file changes with StatReloader
+INFO 2025-03-28 13:31:52,604 autoreload 3772 6544 E:\Software\Django\online_voting\voting_app\views.py changed, reloading.
+INFO 2025-03-28 13:31:52,614 autoreload 1116 10756 E:\Software\Django\online_voting\voting_app\views.py changed, reloading.
+INFO 2025-03-28 13:31:54,048 autoreload 4360 14860 Watching for file changes with StatReloader
+INFO 2025-03-28 13:31:54,049 autoreload 4512 15920 Watching for file changes with StatReloader
+INFO 2025-03-28 13:34:00,862 autoreload 4360 14860 E:\Software\Django\online_voting\voting_app\models.py changed, reloading.
+INFO 2025-03-28 13:34:00,887 autoreload 4512 15920 E:\Software\Django\online_voting\voting_app\models.py changed, reloading.
+INFO 2025-03-28 13:34:02,034 autoreload 11760 8604 Watching for file changes with StatReloader
+INFO 2025-03-28 13:34:02,063 autoreload 12940 12172 Watching for file changes with StatReloader
+INFO 2025-03-28 13:34:06,451 autoreload 11760 8604 E:\Software\Django\online_voting\voting_app\models.py changed, reloading.
+INFO 2025-03-28 13:34:06,489 autoreload 12940 12172 E:\Software\Django\online_voting\voting_app\models.py changed, reloading.
+INFO 2025-03-28 13:34:07,742 autoreload 15400 14256 Watching for file changes with StatReloader
+INFO 2025-03-28 13:34:07,799 autoreload 5012 12744 Watching for file changes with StatReloader
+INFO 2025-03-28 13:34:15,236 autoreload 15400 14256 E:\Software\Django\online_voting\voting_app\models.py changed, reloading.
+INFO 2025-03-28 13:34:15,290 autoreload 5012 12744 E:\Software\Django\online_voting\voting_app\models.py changed, reloading.
+INFO 2025-03-28 13:34:16,872 autoreload 11076 3520 Watching for file changes with StatReloader
+INFO 2025-03-28 13:34:16,952 autoreload 13500 12788 Watching for file changes with StatReloader
+INFO 2025-03-28 13:34:34,333 autoreload 1392 12988 Watching for file changes with StatReloader
+INFO 2025-03-28 13:35:20,261 basehttp 1392 4976 "GET /polls/ HTTP/1.1" 200 17634
+INFO 2025-03-28 13:35:21,073 basehttp 1392 4976 "GET /polls/ HTTP/1.1" 200 17634
+INFO 2025-03-28 13:35:23,124 basehttp 1392 4976 "GET /polls/create/ HTTP/1.1" 200 21473
+WARNING 2025-03-28 13:35:23,646 log 1392 4976 Not Found: /favicon.ico
+WARNING 2025-03-28 13:35:23,650 basehttp 1392 4976 "GET /favicon.ico HTTP/1.1" 404 3821
+INFO 2025-03-28 13:35:48,226 forms 1392 4976 PollForm save method called
+INFO 2025-03-28 13:35:48,227 forms 1392 4976 Image in form save: None
+INFO 2025-03-28 13:35:48,262 aws_utils 1392 4976 Attempting to create AWS clients
+INFO 2025-03-28 13:35:48,267 aws_utils 1392 4976 AWS_ACCESS_KEY_ID: ASIATUYJP7SUDGC6MNID
+INFO 2025-03-28 13:35:48,268 aws_utils 1392 4976 AWS_SECRET_ACCESS_KEY: H3m19mpecNdwa5oakanO9texm42pW9iRiRU/CkrR
+INFO 2025-03-28 13:35:48,268 aws_utils 1392 4976 AWS_REGION: eu-west-1
+INFO 2025-03-28 13:35:48,268 aws_utils 1392 4976 AWS_SNS_TOPIC_ARN: arn:aws:sns:eu-west-1:250738637992:poll-notifications
+INFO 2025-03-28 13:35:48,269 aws_utils 1392 4976 AWS_LAMBDA_FUNCTION_ARN: arn:aws:lambda:eu-west-1:250738637992:function:pollNotificationLambda
+INFO 2025-03-28 13:35:50,193 aws_utils 1392 4976 SNS notification sent for poll: don't
+INFO 2025-03-28 13:35:50,196 aws_utils 1392 4976 Attempting to create AWS clients
+INFO 2025-03-28 13:35:50,196 aws_utils 1392 4976 AWS_ACCESS_KEY_ID: ASIATUYJP7SUDGC6MNID
+INFO 2025-03-28 13:35:50,197 aws_utils 1392 4976 AWS_SECRET_ACCESS_KEY: H3m19mpecNdwa5oakanO9texm42pW9iRiRU/CkrR
+INFO 2025-03-28 13:35:50,197 aws_utils 1392 4976 AWS_REGION: eu-west-1
+INFO 2025-03-28 13:35:50,198 aws_utils 1392 4976 AWS_SNS_TOPIC_ARN: arn:aws:sns:eu-west-1:250738637992:poll-notifications
+INFO 2025-03-28 13:35:50,198 aws_utils 1392 4976 AWS_LAMBDA_FUNCTION_ARN: arn:aws:lambda:eu-west-1:250738637992:function:pollNotificationLambda
+INFO 2025-03-28 13:35:51,505 aws_utils 1392 4976 Lambda function invoked for poll: don't
+INFO 2025-03-28 13:35:51,510 basehttp 1392 4976 "POST /polls/create/ HTTP/1.1" 302 0
+INFO 2025-03-28 13:35:51,526 basehttp 1392 4976 "GET /polls/ HTTP/1.1" 200 22793
+INFO 2025-03-28 13:40:58,381 autoreload 1392 12988 E:\Software\Django\online_voting\voting_app\forms.py changed, reloading.
+INFO 2025-03-28 13:41:00,517 autoreload 14140 12172 Watching for file changes with StatReloader
+INFO 2025-03-28 13:41:21,072 autoreload 14140 12172 E:\Software\Django\online_voting\voting_app\views.py changed, reloading.
+INFO 2025-03-28 13:41:22,534 autoreload 16044 13200 Watching for file changes with StatReloader
+INFO 2025-03-28 13:44:30,880 autoreload 16044 13200 E:\Software\Django\online_voting\voting_app\models.py changed, reloading.
+INFO 2025-03-28 13:44:32,168 autoreload 4564 11772 Watching for file changes with StatReloader
+INFO 2025-03-28 13:44:35,568 autoreload 4564 11772 E:\Software\Django\online_voting\voting_app\models.py changed, reloading.
+INFO 2025-03-28 13:44:36,894 autoreload 5568 8428 Watching for file changes with StatReloader
+INFO 2025-03-28 13:44:57,288 autoreload 4500 10036 Watching for file changes with StatReloader
+INFO 2025-03-28 13:45:05,338 basehttp 4500 6944 "GET /polls/ HTTP/1.1" 200 22370
+INFO 2025-03-28 13:45:05,568 basehttp 4500 6944 "GET /polls/ HTTP/1.1" 200 22370
+INFO 2025-03-28 13:45:05,784 basehttp 4500 6944 "GET /polls/ HTTP/1.1" 200 22370
+INFO 2025-03-28 13:45:05,984 basehttp 4500 6944 "GET /polls/ HTTP/1.1" 200 22370
+INFO 2025-03-28 13:45:06,168 basehttp 4500 6944 "GET /polls/ HTTP/1.1" 200 22370
+INFO 2025-03-28 13:45:06,330 basehttp 4500 6944 "GET /polls/ HTTP/1.1" 200 22370
+INFO 2025-03-28 13:45:06,535 basehttp 4500 6944 "GET /polls/ HTTP/1.1" 200 22370
+WARNING 2025-03-28 13:45:07,002 log 4500 6944 Not Found: /favicon.ico
+WARNING 2025-03-28 13:45:07,003 basehttp 4500 6944 "GET /favicon.ico HTTP/1.1" 404 3821
+INFO 2025-03-28 13:45:07,923 basehttp 4500 6944 "GET /polls/23/delete/ HTTP/1.1" 200 9257
+INFO 2025-03-28 13:45:08,602 basehttp 4500 6944 "POST /polls/23/delete/ HTTP/1.1" 302 0
+INFO 2025-03-28 13:45:08,613 basehttp 4500 6944 "GET /polls/ HTTP/1.1" 200 17634
+INFO 2025-03-28 13:45:10,956 basehttp 4500 6944 "GET /polls/22/delete/ HTTP/1.1" 200 9249
+INFO 2025-03-28 13:45:11,814 basehttp 4500 6944 "POST /polls/22/delete/ HTTP/1.1" 302 0
+INFO 2025-03-28 13:45:11,824 basehttp 4500 6944 "GET /polls/ HTTP/1.1" 200 12915
+INFO 2025-03-28 13:45:12,502 basehttp 4500 6944 "GET /polls/create/ HTTP/1.1" 200 21503
+INFO 2025-03-28 13:45:29,680 basehttp 4500 6944 "POST /polls/create/ HTTP/1.1" 200 21964
+INFO 2025-03-28 13:46:40,049 autoreload 4500 10036 E:\Software\Django\online_voting\voting_app\models.py changed, reloading.
+INFO 2025-03-28 13:46:41,685 autoreload 8420 900 Watching for file changes with StatReloader
+INFO 2025-03-28 13:51:16,386 autoreload 8420 900 E:\Software\Django\online_voting\voting_app\views.py changed, reloading.
+INFO 2025-03-28 13:51:18,279 autoreload 16124 1392 Watching for file changes with StatReloader
+INFO 2025-03-28 13:52:09,664 autoreload 16124 1392 E:\Software\Django\online_voting\voting_app\forms.py changed, reloading.
+INFO 2025-03-28 13:52:11,015 autoreload 5880 11504 Watching for file changes with StatReloader
+INFO 2025-03-28 13:52:32,337 autoreload 5880 11504 E:\Software\Django\online_voting\voting_app\forms.py changed, reloading.
+INFO 2025-03-28 13:52:33,706 autoreload 16032 12096 Watching for file changes with StatReloader
+INFO 2025-03-28 13:52:37,424 autoreload 16032 12096 E:\Software\Django\online_voting\voting_app\forms.py changed, reloading.
+INFO 2025-03-28 13:52:38,827 autoreload 16212 11140 Watching for file changes with StatReloader
+INFO 2025-03-28 13:52:42,235 autoreload 16212 11140 E:\Software\Django\online_voting\voting_app\forms.py changed, reloading.
+INFO 2025-03-28 13:52:43,537 autoreload 5252 14576 Watching for file changes with StatReloader
+INFO 2025-03-28 13:53:01,853 autoreload 5252 14576 E:\Software\Django\online_voting\voting_app\forms.py changed, reloading.
+INFO 2025-03-28 13:53:03,320 autoreload 13456 4684 Watching for file changes with StatReloader
+INFO 2025-03-28 14:25:49,460 autoreload 13456 4684 E:\Software\Django\online_voting\voting_app\forms.py changed, reloading.
+INFO 2025-03-28 14:25:51,075 autoreload 12156 7304 Watching for file changes with StatReloader
+INFO 2025-03-28 14:26:10,283 autoreload 1680 10168 Watching for file changes with StatReloader
+ERROR 2025-03-28 14:26:26,568 log 1680 17344 Internal Server Error: /polls/create/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Software\Django\online_voting\voting_app\views.py", line 90, in post
+    logger.info(f"Received POST data: {request.POST}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+ERROR 2025-03-28 14:26:26,574 basehttp 1680 17344 "POST /polls/create/ HTTP/1.1" 500 85460
+WARNING 2025-03-28 14:26:26,700 log 1680 17344 Not Found: /favicon.ico
+WARNING 2025-03-28 14:26:26,701 basehttp 1680 17344 "GET /favicon.ico HTTP/1.1" 404 3821
+INFO 2025-03-28 14:26:46,971 autoreload 1680 10168 E:\Software\Django\online_voting\voting_app\views.py changed, reloading.
+INFO 2025-03-28 14:26:49,939 autoreload 10476 12108 Watching for file changes with StatReloader
+ERROR 2025-03-28 14:26:55,151 log 10476 17284 Internal Server Error: /polls/create/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Software\Django\online_voting\voting_app\views.py", line 91, in post
+    logger.info(f"Received POST data: {request.POST}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+ERROR 2025-03-28 14:26:55,158 basehttp 10476 17284 "POST /polls/create/ HTTP/1.1" 500 85460
+WARNING 2025-03-28 14:26:55,260 log 10476 17284 Not Found: /favicon.ico
+WARNING 2025-03-28 14:26:55,262 basehttp 10476 17284 "GET /favicon.ico HTTP/1.1" 404 3821
+INFO 2025-03-28 14:27:32,856 autoreload 10476 12108 E:\Software\Django\online_voting\voting_app\views.py changed, reloading.
+INFO 2025-03-28 14:27:34,294 autoreload 13580 12744 Watching for file changes with StatReloader
+INFO 2025-03-28 14:27:38,241 forms 13580 12996 Image Validation - Name: 1.png
+INFO 2025-03-28 14:27:38,241 forms 13580 12996 Image Validation - Size: 34650 bytes
+INFO 2025-03-28 14:27:38,242 forms 13580 12996 Image Validation - Content Type: image/png
+INFO 2025-03-28 14:27:38,281 basehttp 13580 12996 "POST /polls/create/ HTTP/1.1" 200 21964
+WARNING 2025-03-28 14:27:38,895 log 13580 12996 Not Found: /favicon.ico
+WARNING 2025-03-28 14:27:38,895 basehttp 13580 12996 "GET /favicon.ico HTTP/1.1" 404 3821
+INFO 2025-03-28 14:27:41,102 basehttp 13580 12996 "GET /polls/create/ HTTP/1.1" 200 21503
+INFO 2025-03-28 14:27:55,814 forms 13580 12996 Image Validation - Name: 1.png
+INFO 2025-03-28 14:27:55,820 forms 13580 12996 Image Validation - Size: 34650 bytes
+INFO 2025-03-28 14:27:55,821 forms 13580 12996 Image Validation - Content Type: image/png
+INFO 2025-03-28 14:27:55,830 basehttp 13580 12996 "POST /polls/create/ HTTP/1.1" 200 21951
+INFO 2025-03-28 14:28:01,890 forms 13580 12996 Image Validation - Name: 1.png
+INFO 2025-03-28 14:28:01,892 forms 13580 12996 Image Validation - Size: 34650 bytes
+INFO 2025-03-28 14:28:01,892 forms 13580 12996 Image Validation - Content Type: image/png
+INFO 2025-03-28 14:28:01,901 basehttp 13580 12996 "POST /polls/create/ HTTP/1.1" 200 21951
+INFO 2025-03-28 14:30:02,422 autoreload 13580 12744 E:\Software\Django\online_voting\voting_app\models.py changed, reloading.
+INFO 2025-03-28 14:30:03,936 autoreload 16416 11744 Watching for file changes with StatReloader
+INFO 2025-03-28 14:30:10,970 forms 16416 1324 Image Validation - Name: 1.png
+INFO 2025-03-28 14:30:10,970 forms 16416 1324 Image Validation - Size: 34650 bytes
+INFO 2025-03-28 14:30:10,971 forms 16416 1324 Image Validation - Content Type: image/png
+ERROR 2025-03-28 14:30:11,038 log 16416 1324 Internal Server Error: /polls/create/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Software\Django\online_voting\voting_app\views.py", line 98, in form_valid
+    logger.info(f"Received FILES: {self.request.FILES}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+ERROR 2025-03-28 14:30:11,049 basehttp 16416 1324 "POST /polls/create/ HTTP/1.1" 500 93879
+WARNING 2025-03-28 14:30:11,136 log 16416 1324 Not Found: /favicon.ico
+WARNING 2025-03-28 14:30:11,137 basehttp 16416 1324 "GET /favicon.ico HTTP/1.1" 404 3821
+INFO 2025-03-28 14:30:23,482 basehttp 16416 1324 "GET / HTTP/1.1" 200 10500
+INFO 2025-03-28 14:30:24,462 basehttp 16416 1324 "GET /polls/create/ HTTP/1.1" 200 21503
+INFO 2025-03-28 14:30:36,471 forms 16416 1324 Image Validation - Name: 2.png
+INFO 2025-03-28 14:30:36,471 forms 16416 1324 Image Validation - Size: 29571 bytes
+INFO 2025-03-28 14:30:36,471 forms 16416 1324 Image Validation - Content Type: image/png
+ERROR 2025-03-28 14:30:36,508 log 16416 1324 Internal Server Error: /polls/create/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Software\Django\online_voting\voting_app\views.py", line 98, in form_valid
+    logger.info(f"Received FILES: {self.request.FILES}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+ERROR 2025-03-28 14:30:36,521 basehttp 16416 1324 "POST /polls/create/ HTTP/1.1" 500 93739
+INFO 2025-03-28 14:30:59,529 autoreload 16416 11744 E:\Software\Django\online_voting\voting_app\views.py changed, reloading.
+INFO 2025-03-28 14:31:00,997 autoreload 15692 15640 Watching for file changes with StatReloader
+INFO 2025-03-28 14:31:06,245 forms 15692 13176 Image Validation - Name: 2.png
+INFO 2025-03-28 14:31:06,246 forms 15692 13176 Image Validation - Size: 29571 bytes
+INFO 2025-03-28 14:31:06,246 forms 15692 13176 Image Validation - Content Type: image/png
+INFO 2025-03-28 14:31:06,247 forms 15692 13176 PollForm save method called
+INFO 2025-03-28 14:31:06,247 forms 15692 13176 Form cleaned data: {'title': 'sdfsdfsdfsd', 'description': 'sdfsdfsd', 'end_date': datetime.datetime(2025, 3, 29, 18, 34, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'poll_image': <InMemoryUploadedFile: 2.png (image/png)>}
+INFO 2025-03-28 14:31:06,248 forms 15692 13176 Image found: 2.png
+INFO 2025-03-28 14:31:06,257 models 15692 13176 save_poll_image method called
+INFO 2025-03-28 14:31:06,258 models 15692 13176 Image file type: <class 'django.core.files.uploadedfile.InMemoryUploadedFile'>
+INFO 2025-03-28 14:31:06,258 models 15692 13176 Image file name: 2.png
+INFO 2025-03-28 14:31:06,258 models 15692 13176 Image file size: 29571
+INFO 2025-03-28 14:31:06,259 models 15692 13176 Image content type: image/png
+ERROR 2025-03-28 14:31:06,787 s3_utils 15692 13176 Error deleting file from S3: 'ImageFieldFile' object has no attribute 'split'
+INFO 2025-03-28 14:31:06,792 models 15692 13176 Deleted existing image: poll_images/2.png
+INFO 2025-03-28 14:31:06,793 s3_utils 15692 13176 Preparing to upload file
+INFO 2025-03-28 14:31:06,793 s3_utils 15692 13176 File name: 2.png
+INFO 2025-03-28 14:31:06,794 s3_utils 15692 13176 File size: 29571 bytes
+INFO 2025-03-28 14:31:06,794 s3_utils 15692 13176 Reported content type: image/png
+INFO 2025-03-28 14:31:06,795 s3_utils 15692 13176 Determined content type: image/png
+INFO 2025-03-28 14:31:07,131 s3_utils 15692 13176 Generated unique filename: polls/cb09845f-9297-44dc-a527-cdc07e6f3a8c.png
+ERROR 2025-03-28 14:31:08,188 s3_utils 15692 13176 S3 Upload Failure: An error occurred (AccessControlListNotSupported) when calling the PutObject operation: The bucket does not allow ACLs
+ERROR 2025-03-28 14:31:08,265 s3_utils 15692 13176 Traceback (most recent call last):
+  File "E:\Software\Django\online_voting\voting_app\s3_utils.py", line 69, in upload_file_to_s3
+    s3_client.upload_fileobj(
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\boto3\s3\inject.py", line 670, in upload_fileobj
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 111, in result
+    return self._coordinator.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 272, in result
+    raise self._exception
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 142, in __call__
+    return self._execute_main(kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 165, in _execute_main
+    return_value = self._main(**kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\upload.py", line 796, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 570, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 1031, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessControlListNotSupported) when calling the PutObject operation: The bucket does not allow ACLs
+
+ERROR 2025-03-28 14:31:08,270 models 15692 13176 Failed to upload image to S3
+INFO 2025-03-28 14:31:08,270 forms 15692 13176 Image upload result: False
+WARNING 2025-03-28 14:31:08,270 forms 15692 13176 Image upload failed
+INFO 2025-03-28 14:31:08,271 models 15692 13176 save_poll_image method called
+INFO 2025-03-28 14:31:08,271 models 15692 13176 Image file type: <class 'django.core.files.uploadedfile.InMemoryUploadedFile'>
+INFO 2025-03-28 14:31:08,271 models 15692 13176 Image file name: 2.png
+INFO 2025-03-28 14:31:08,271 models 15692 13176 Image file size: 29571
+INFO 2025-03-28 14:31:08,272 models 15692 13176 Image content type: image/png
+ERROR 2025-03-28 14:31:08,492 s3_utils 15692 13176 Error deleting file from S3: 'ImageFieldFile' object has no attribute 'split'
+INFO 2025-03-28 14:31:08,493 models 15692 13176 Deleted existing image: poll_images/2.png
+INFO 2025-03-28 14:31:08,493 s3_utils 15692 13176 Preparing to upload file
+INFO 2025-03-28 14:31:08,493 s3_utils 15692 13176 File name: 2.png
+INFO 2025-03-28 14:31:08,494 s3_utils 15692 13176 File size: 29571 bytes
+INFO 2025-03-28 14:31:08,494 s3_utils 15692 13176 Reported content type: image/png
+INFO 2025-03-28 14:31:08,494 s3_utils 15692 13176 Determined content type: image/png
+INFO 2025-03-28 14:31:08,695 s3_utils 15692 13176 Generated unique filename: polls/1dbee501-81e6-4015-8ada-eb65cbd91bd9.png
+ERROR 2025-03-28 14:31:08,697 s3_utils 15692 13176 File seek error: I/O operation on closed file.
+ERROR 2025-03-28 14:31:08,698 models 15692 13176 Failed to upload image to S3
+INFO 2025-03-28 14:31:08,757 basehttp 15692 13176 "POST /polls/create/ HTTP/1.1" 200 22218
+WARNING 2025-03-28 14:31:09,309 log 15692 13176 Not Found: /favicon.ico
+WARNING 2025-03-28 14:31:09,310 basehttp 15692 13176 "GET /favicon.ico HTTP/1.1" 404 3821
+INFO 2025-03-28 14:33:17,007 autoreload 15692 15640 E:\Software\Django\online_voting\voting_app\s3_utils.py changed, reloading.
+INFO 2025-03-28 14:33:18,650 autoreload 4988 15704 Watching for file changes with StatReloader
+INFO 2025-03-28 14:33:21,876 forms 4988 8844 Image Validation - Name: 2.png
+INFO 2025-03-28 14:33:21,877 forms 4988 8844 Image Validation - Size: 29571 bytes
+INFO 2025-03-28 14:33:21,878 forms 4988 8844 Image Validation - Content Type: image/png
+INFO 2025-03-28 14:33:21,879 forms 4988 8844 PollForm save method called
+INFO 2025-03-28 14:33:21,879 forms 4988 8844 Form cleaned data: {'title': 'sdfsdfsdfsd', 'description': 'sdfsdfsd', 'end_date': datetime.datetime(2025, 3, 29, 18, 34, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'poll_image': <InMemoryUploadedFile: 2.png (image/png)>}
+INFO 2025-03-28 14:33:21,880 forms 4988 8844 Image found: 2.png
+INFO 2025-03-28 14:33:21,889 models 4988 8844 save_poll_image method called
+INFO 2025-03-28 14:33:21,889 models 4988 8844 Image file type: <class 'django.core.files.uploadedfile.InMemoryUploadedFile'>
+INFO 2025-03-28 14:33:21,890 models 4988 8844 Image file name: 2.png
+INFO 2025-03-28 14:33:21,890 models 4988 8844 Image file size: 29571
+INFO 2025-03-28 14:33:21,890 models 4988 8844 Image content type: image/png
+ERROR 2025-03-28 14:33:22,315 s3_utils 4988 8844 Error deleting file from S3: 'ImageFieldFile' object has no attribute 'split'
+INFO 2025-03-28 14:33:22,315 models 4988 8844 Deleted existing image: poll_images/2_yNkDest.png
+INFO 2025-03-28 14:33:22,316 s3_utils 4988 8844 Preparing to upload file
+INFO 2025-03-28 14:33:22,316 s3_utils 4988 8844 File name: 2.png
+INFO 2025-03-28 14:33:22,318 s3_utils 4988 8844 File size: 29571 bytes
+INFO 2025-03-28 14:33:22,319 s3_utils 4988 8844 Reported content type: image/png
+INFO 2025-03-28 14:33:22,320 s3_utils 4988 8844 Determined content type: image/png
+INFO 2025-03-28 14:33:22,320 s3_utils 4988 8844 Generated unique filename: polls/fb099fff-ba09-4aaf-a1aa-fd1d1f8dcaef.png
+ERROR 2025-03-28 14:33:23,755 s3_utils 4988 8844 S3 Upload Failure: An error occurred (AccessControlListNotSupported) when calling the PutObject operation: The bucket does not allow ACLs
+ERROR 2025-03-28 14:33:23,759 s3_utils 4988 8844 Traceback (most recent call last):
+  File "E:\Software\Django\online_voting\voting_app\s3_utils.py", line 67, in upload_file_to_s3
+    s3_client.upload_fileobj(
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\boto3\s3\inject.py", line 670, in upload_fileobj
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 111, in result
+    return self._coordinator.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 272, in result
+    raise self._exception
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 142, in __call__
+    return self._execute_main(kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 165, in _execute_main
+    return_value = self._main(**kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\upload.py", line 796, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 570, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 1031, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessControlListNotSupported) when calling the PutObject operation: The bucket does not allow ACLs
+
+ERROR 2025-03-28 14:33:23,763 models 4988 8844 Failed to upload image to S3
+INFO 2025-03-28 14:33:23,763 forms 4988 8844 Image upload result: False
+WARNING 2025-03-28 14:33:23,763 forms 4988 8844 Image upload failed
+INFO 2025-03-28 14:33:23,764 models 4988 8844 save_poll_image method called
+INFO 2025-03-28 14:33:23,764 models 4988 8844 Image file type: <class 'django.core.files.uploadedfile.InMemoryUploadedFile'>
+INFO 2025-03-28 14:33:23,764 models 4988 8844 Image file name: 2.png
+INFO 2025-03-28 14:33:23,765 models 4988 8844 Image file size: 29571
+INFO 2025-03-28 14:33:23,767 models 4988 8844 Image content type: image/png
+ERROR 2025-03-28 14:33:23,979 s3_utils 4988 8844 Error deleting file from S3: 'ImageFieldFile' object has no attribute 'split'
+INFO 2025-03-28 14:33:23,979 models 4988 8844 Deleted existing image: poll_images/2_yNkDest.png
+INFO 2025-03-28 14:33:23,980 s3_utils 4988 8844 Preparing to upload file
+INFO 2025-03-28 14:33:23,980 s3_utils 4988 8844 File name: 2.png
+INFO 2025-03-28 14:33:23,980 s3_utils 4988 8844 File size: 29571 bytes
+INFO 2025-03-28 14:33:23,981 s3_utils 4988 8844 Reported content type: image/png
+INFO 2025-03-28 14:33:23,981 s3_utils 4988 8844 Determined content type: image/png
+ERROR 2025-03-28 14:33:23,981 s3_utils 4988 8844 File seek error: [Errno 2] No such file or directory: '2.png'
+ERROR 2025-03-28 14:33:23,981 models 4988 8844 Failed to upload image to S3
+INFO 2025-03-28 14:33:24,012 basehttp 4988 8844 "POST /polls/create/ HTTP/1.1" 200 22218
+WARNING 2025-03-28 14:33:24,601 log 4988 8844 Not Found: /favicon.ico
+WARNING 2025-03-28 14:33:24,602 basehttp 4988 8844 "GET /favicon.ico HTTP/1.1" 404 3821
+INFO 2025-03-28 14:58:18,605 forms 4988 7272 Image Validation - Name: 2.png
+INFO 2025-03-28 14:58:18,606 forms 4988 7272 Image Validation - Size: 29571 bytes
+INFO 2025-03-28 14:58:18,607 forms 4988 7272 Image Validation - Content Type: image/png
+INFO 2025-03-28 14:58:18,607 forms 4988 7272 PollForm save method called
+INFO 2025-03-28 14:58:18,608 forms 4988 7272 Form cleaned data: {'title': 'sdfsdfsdfsd', 'description': 'sdfsdfsd', 'end_date': datetime.datetime(2025, 3, 29, 18, 34, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'poll_image': <InMemoryUploadedFile: 2.png (image/png)>}
+INFO 2025-03-28 14:58:18,608 forms 4988 7272 Image found: 2.png
+INFO 2025-03-28 14:58:18,619 models 4988 7272 save_poll_image method called
+INFO 2025-03-28 14:58:18,619 models 4988 7272 Image file type: <class 'django.core.files.uploadedfile.InMemoryUploadedFile'>
+INFO 2025-03-28 14:58:18,620 models 4988 7272 Image file name: 2.png
+INFO 2025-03-28 14:58:18,622 models 4988 7272 Image file size: 29571
+INFO 2025-03-28 14:58:18,623 models 4988 7272 Image content type: image/png
+ERROR 2025-03-28 14:58:18,830 s3_utils 4988 7272 Error deleting file from S3: 'ImageFieldFile' object has no attribute 'split'
+INFO 2025-03-28 14:58:18,831 models 4988 7272 Deleted existing image: poll_images/2_uzjkQVh.png
+INFO 2025-03-28 14:58:18,831 s3_utils 4988 7272 Preparing to upload file
+INFO 2025-03-28 14:58:18,832 s3_utils 4988 7272 File name: 2.png
+INFO 2025-03-28 14:58:18,833 s3_utils 4988 7272 File size: 29571 bytes
+INFO 2025-03-28 14:58:18,834 s3_utils 4988 7272 Reported content type: image/png
+INFO 2025-03-28 14:58:18,834 s3_utils 4988 7272 Determined content type: image/png
+INFO 2025-03-28 14:58:18,834 s3_utils 4988 7272 Generated unique filename: polls/7bec1688-63da-4efd-a049-687041d826ec.png
+ERROR 2025-03-28 14:58:20,240 s3_utils 4988 7272 S3 Upload Failure: An error occurred (AccessControlListNotSupported) when calling the PutObject operation: The bucket does not allow ACLs
+ERROR 2025-03-28 14:58:20,242 s3_utils 4988 7272 Traceback (most recent call last):
+  File "E:\Software\Django\online_voting\voting_app\s3_utils.py", line 67, in upload_file_to_s3
+    s3_client.upload_fileobj(
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\boto3\s3\inject.py", line 670, in upload_fileobj
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 111, in result
+    return self._coordinator.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 272, in result
+    raise self._exception
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 142, in __call__
+    return self._execute_main(kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 165, in _execute_main
+    return_value = self._main(**kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\upload.py", line 796, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 570, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 1031, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessControlListNotSupported) when calling the PutObject operation: The bucket does not allow ACLs
+
+ERROR 2025-03-28 14:58:20,246 models 4988 7272 Failed to upload image to S3
+INFO 2025-03-28 14:58:20,247 forms 4988 7272 Image upload result: False
+WARNING 2025-03-28 14:58:20,249 forms 4988 7272 Image upload failed
+INFO 2025-03-28 14:58:20,249 models 4988 7272 save_poll_image method called
+INFO 2025-03-28 14:58:20,250 models 4988 7272 Image file type: <class 'django.core.files.uploadedfile.InMemoryUploadedFile'>
+INFO 2025-03-28 14:58:20,251 models 4988 7272 Image file name: 2.png
+INFO 2025-03-28 14:58:20,255 models 4988 7272 Image file size: 29571
+INFO 2025-03-28 14:58:20,257 models 4988 7272 Image content type: image/png
+ERROR 2025-03-28 14:58:20,457 s3_utils 4988 7272 Error deleting file from S3: 'ImageFieldFile' object has no attribute 'split'
+INFO 2025-03-28 14:58:20,459 models 4988 7272 Deleted existing image: poll_images/2_uzjkQVh.png
+INFO 2025-03-28 14:58:20,459 s3_utils 4988 7272 Preparing to upload file
+INFO 2025-03-28 14:58:20,460 s3_utils 4988 7272 File name: 2.png
+INFO 2025-03-28 14:58:20,460 s3_utils 4988 7272 File size: 29571 bytes
+INFO 2025-03-28 14:58:20,460 s3_utils 4988 7272 Reported content type: image/png
+INFO 2025-03-28 14:58:20,461 s3_utils 4988 7272 Determined content type: image/png
+ERROR 2025-03-28 14:58:20,461 s3_utils 4988 7272 File seek error: [Errno 2] No such file or directory: '2.png'
+ERROR 2025-03-28 14:58:20,461 models 4988 7272 Failed to upload image to S3
+INFO 2025-03-28 14:58:20,476 basehttp 4988 7272 "POST /polls/create/ HTTP/1.1" 200 22218
+WARNING 2025-03-28 14:58:21,739 log 4988 7272 Not Found: /favicon.ico
+WARNING 2025-03-28 14:58:21,740 basehttp 4988 7272 "GET /favicon.ico HTTP/1.1" 404 3821
+INFO 2025-03-28 14:58:22,252 basehttp 4988 7272 "GET / HTTP/1.1" 200 10500
+INFO 2025-03-28 14:58:24,912 basehttp 4988 7272 "GET /polls/create/ HTTP/1.1" 200 21503
+INFO 2025-03-28 14:58:47,513 forms 4988 7272 Image Validation - Name: 2.png
+INFO 2025-03-28 14:58:47,514 forms 4988 7272 Image Validation - Size: 29571 bytes
+INFO 2025-03-28 14:58:47,515 forms 4988 7272 Image Validation - Content Type: image/png
+INFO 2025-03-28 14:58:47,516 forms 4988 7272 PollForm save method called
+INFO 2025-03-28 14:58:47,517 forms 4988 7272 Form cleaned data: {'title': 'adasdasdasdasd', 'description': 'adbasdajsda', 'end_date': datetime.datetime(2025, 3, 29, 17, 1, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'poll_image': <InMemoryUploadedFile: 2.png (image/png)>}
+INFO 2025-03-28 14:58:47,518 forms 4988 7272 Image found: 2.png
+INFO 2025-03-28 14:58:47,562 models 4988 7272 save_poll_image method called
+INFO 2025-03-28 14:58:47,563 models 4988 7272 Image file type: <class 'django.core.files.uploadedfile.InMemoryUploadedFile'>
+INFO 2025-03-28 14:58:47,563 models 4988 7272 Image file name: 2.png
+INFO 2025-03-28 14:58:47,563 models 4988 7272 Image file size: 29571
+INFO 2025-03-28 14:58:47,564 models 4988 7272 Image content type: image/png
+ERROR 2025-03-28 14:58:47,765 s3_utils 4988 7272 Error deleting file from S3: 'ImageFieldFile' object has no attribute 'split'
+INFO 2025-03-28 14:58:47,766 models 4988 7272 Deleted existing image: poll_images/2_9gOZ5uE.png
+INFO 2025-03-28 14:58:47,767 s3_utils 4988 7272 Preparing to upload file
+INFO 2025-03-28 14:58:47,767 s3_utils 4988 7272 File name: 2.png
+INFO 2025-03-28 14:58:47,767 s3_utils 4988 7272 File size: 29571 bytes
+INFO 2025-03-28 14:58:47,768 s3_utils 4988 7272 Reported content type: image/png
+INFO 2025-03-28 14:58:47,768 s3_utils 4988 7272 Determined content type: image/png
+INFO 2025-03-28 14:58:47,768 s3_utils 4988 7272 Generated unique filename: polls/4db192fb-3eac-4670-b69f-c6dff517aa97.png
+ERROR 2025-03-28 14:58:48,971 s3_utils 4988 7272 S3 Upload Failure: An error occurred (AccessControlListNotSupported) when calling the PutObject operation: The bucket does not allow ACLs
+ERROR 2025-03-28 14:58:48,973 s3_utils 4988 7272 Traceback (most recent call last):
+  File "E:\Software\Django\online_voting\voting_app\s3_utils.py", line 67, in upload_file_to_s3
+    s3_client.upload_fileobj(
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\boto3\s3\inject.py", line 670, in upload_fileobj
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 111, in result
+    return self._coordinator.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 272, in result
+    raise self._exception
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 142, in __call__
+    return self._execute_main(kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 165, in _execute_main
+    return_value = self._main(**kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\upload.py", line 796, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 570, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 1031, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessControlListNotSupported) when calling the PutObject operation: The bucket does not allow ACLs
+
+ERROR 2025-03-28 14:58:48,980 models 4988 7272 Failed to upload image to S3
+INFO 2025-03-28 14:58:48,980 forms 4988 7272 Image upload result: False
+WARNING 2025-03-28 14:58:48,981 forms 4988 7272 Image upload failed
+INFO 2025-03-28 14:58:48,981 models 4988 7272 save_poll_image method called
+INFO 2025-03-28 14:58:48,982 models 4988 7272 Image file type: <class 'django.core.files.uploadedfile.InMemoryUploadedFile'>
+INFO 2025-03-28 14:58:48,982 models 4988 7272 Image file name: 2.png
+INFO 2025-03-28 14:58:48,983 models 4988 7272 Image file size: 29571
+INFO 2025-03-28 14:58:48,983 models 4988 7272 Image content type: image/png
+ERROR 2025-03-28 14:58:49,181 s3_utils 4988 7272 Error deleting file from S3: 'ImageFieldFile' object has no attribute 'split'
+INFO 2025-03-28 14:58:49,182 models 4988 7272 Deleted existing image: poll_images/2_9gOZ5uE.png
+INFO 2025-03-28 14:58:49,182 s3_utils 4988 7272 Preparing to upload file
+INFO 2025-03-28 14:58:49,183 s3_utils 4988 7272 File name: 2.png
+INFO 2025-03-28 14:58:49,183 s3_utils 4988 7272 File size: 29571 bytes
+INFO 2025-03-28 14:58:49,183 s3_utils 4988 7272 Reported content type: image/png
+INFO 2025-03-28 14:58:49,184 s3_utils 4988 7272 Determined content type: image/png
+ERROR 2025-03-28 14:58:49,184 s3_utils 4988 7272 File seek error: [Errno 2] No such file or directory: '2.png'
+ERROR 2025-03-28 14:58:49,184 models 4988 7272 Failed to upload image to S3
+INFO 2025-03-28 14:58:49,192 basehttp 4988 7272 "POST /polls/create/ HTTP/1.1" 200 22235
+INFO 2025-03-28 14:59:01,812 forms 4988 7272 Image Validation - Name: 1.png
+INFO 2025-03-28 14:59:01,812 forms 4988 7272 Image Validation - Size: 34650 bytes
+INFO 2025-03-28 14:59:01,813 forms 4988 7272 Image Validation - Content Type: image/png
+INFO 2025-03-28 14:59:01,813 forms 4988 7272 PollForm save method called
+INFO 2025-03-28 14:59:01,814 forms 4988 7272 Form cleaned data: {'title': 'adasdasdasdasd', 'description': 'adbasdajsda', 'end_date': datetime.datetime(2025, 3, 29, 17, 1, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'poll_image': <InMemoryUploadedFile: 1.png (image/png)>}
+INFO 2025-03-28 14:59:01,815 forms 4988 7272 Image found: 1.png
+INFO 2025-03-28 14:59:01,823 models 4988 7272 save_poll_image method called
+INFO 2025-03-28 14:59:01,823 models 4988 7272 Image file type: <class 'django.core.files.uploadedfile.InMemoryUploadedFile'>
+INFO 2025-03-28 14:59:01,824 models 4988 7272 Image file name: 1.png
+INFO 2025-03-28 14:59:01,824 models 4988 7272 Image file size: 34650
+INFO 2025-03-28 14:59:01,824 models 4988 7272 Image content type: image/png
+ERROR 2025-03-28 14:59:02,243 s3_utils 4988 7272 Error deleting file from S3: 'ImageFieldFile' object has no attribute 'split'
+INFO 2025-03-28 14:59:02,244 models 4988 7272 Deleted existing image: poll_images/1.png
+INFO 2025-03-28 14:59:02,244 s3_utils 4988 7272 Preparing to upload file
+INFO 2025-03-28 14:59:02,245 s3_utils 4988 7272 File name: 1.png
+INFO 2025-03-28 14:59:02,245 s3_utils 4988 7272 File size: 34650 bytes
+INFO 2025-03-28 14:59:02,245 s3_utils 4988 7272 Reported content type: image/png
+INFO 2025-03-28 14:59:02,246 s3_utils 4988 7272 Determined content type: image/png
+INFO 2025-03-28 14:59:02,246 s3_utils 4988 7272 Generated unique filename: polls/7db5eaec-8330-4176-a5a6-1f6e391646c1.png
+ERROR 2025-03-28 14:59:03,425 s3_utils 4988 7272 S3 Upload Failure: An error occurred (AccessControlListNotSupported) when calling the PutObject operation: The bucket does not allow ACLs
+ERROR 2025-03-28 14:59:03,428 s3_utils 4988 7272 Traceback (most recent call last):
+  File "E:\Software\Django\online_voting\voting_app\s3_utils.py", line 67, in upload_file_to_s3
+    s3_client.upload_fileobj(
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\boto3\s3\inject.py", line 670, in upload_fileobj
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 111, in result
+    return self._coordinator.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 272, in result
+    raise self._exception
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 142, in __call__
+    return self._execute_main(kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 165, in _execute_main
+    return_value = self._main(**kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\upload.py", line 796, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 570, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 1031, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessControlListNotSupported) when calling the PutObject operation: The bucket does not allow ACLs
+
+ERROR 2025-03-28 14:59:03,434 models 4988 7272 Failed to upload image to S3
+INFO 2025-03-28 14:59:03,435 forms 4988 7272 Image upload result: False
+WARNING 2025-03-28 14:59:03,435 forms 4988 7272 Image upload failed
+INFO 2025-03-28 14:59:03,436 models 4988 7272 save_poll_image method called
+INFO 2025-03-28 14:59:03,438 models 4988 7272 Image file type: <class 'django.core.files.uploadedfile.InMemoryUploadedFile'>
+INFO 2025-03-28 14:59:03,440 models 4988 7272 Image file name: 1.png
+INFO 2025-03-28 14:59:03,441 models 4988 7272 Image file size: 34650
+INFO 2025-03-28 14:59:03,442 models 4988 7272 Image content type: image/png
+ERROR 2025-03-28 14:59:03,634 s3_utils 4988 7272 Error deleting file from S3: 'ImageFieldFile' object has no attribute 'split'
+INFO 2025-03-28 14:59:03,635 models 4988 7272 Deleted existing image: poll_images/1.png
+INFO 2025-03-28 14:59:03,635 s3_utils 4988 7272 Preparing to upload file
+INFO 2025-03-28 14:59:03,635 s3_utils 4988 7272 File name: 1.png
+INFO 2025-03-28 14:59:03,636 s3_utils 4988 7272 File size: 34650 bytes
+INFO 2025-03-28 14:59:03,636 s3_utils 4988 7272 Reported content type: image/png
+INFO 2025-03-28 14:59:03,636 s3_utils 4988 7272 Determined content type: image/png
+ERROR 2025-03-28 14:59:03,637 s3_utils 4988 7272 File seek error: [Errno 2] No such file or directory: '1.png'
+ERROR 2025-03-28 14:59:03,637 models 4988 7272 Failed to upload image to S3
+INFO 2025-03-28 14:59:03,645 basehttp 4988 7272 "POST /polls/create/ HTTP/1.1" 200 22235
+INFO 2025-03-28 15:00:25,718 autoreload 4988 15704 E:\Software\Django\online_voting\voting_app\s3_utils.py changed, reloading.
+INFO 2025-03-28 15:00:27,490 autoreload 8740 7712 Watching for file changes with StatReloader
+INFO 2025-03-28 15:00:43,867 autoreload 8740 7712 E:\Software\Django\online_voting\voting_app\models.py changed, reloading.
+INFO 2025-03-28 15:00:45,132 autoreload 9660 3228 Watching for file changes with StatReloader
+INFO 2025-03-28 15:00:49,748 autoreload 9660 3228 E:\Software\Django\online_voting\voting_app\models.py changed, reloading.
+INFO 2025-03-28 15:00:50,981 autoreload 5832 13948 Watching for file changes with StatReloader
+INFO 2025-03-28 15:01:09,307 autoreload 3308 13560 Watching for file changes with StatReloader
+INFO 2025-03-28 15:01:15,338 forms 3308 8324 Image Validation - Name: 1.png
+INFO 2025-03-28 15:01:15,338 forms 3308 8324 Image Validation - Size: 34650 bytes
+INFO 2025-03-28 15:01:15,338 forms 3308 8324 Image Validation - Content Type: image/png
+INFO 2025-03-28 15:01:15,339 forms 3308 8324 PollForm save method called
+INFO 2025-03-28 15:01:15,340 forms 3308 8324 Form cleaned data: {'title': 'adasdasdasdasd', 'description': 'adbasdajsda', 'end_date': datetime.datetime(2025, 3, 29, 17, 1, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'poll_image': <InMemoryUploadedFile: 1.png (image/png)>}
+INFO 2025-03-28 15:01:15,341 forms 3308 8324 Image found: 1.png
+INFO 2025-03-28 15:01:15,348 models 3308 8324 save_poll_image method called
+INFO 2025-03-28 15:01:15,350 models 3308 8324 Image file type: <class 'django.core.files.uploadedfile.InMemoryUploadedFile'>
+INFO 2025-03-28 15:01:15,351 models 3308 8324 Image file name: 1.png
+INFO 2025-03-28 15:01:15,352 models 3308 8324 Image file size: 34650
+INFO 2025-03-28 15:01:15,353 models 3308 8324 Image content type: image/png
+WARNING 2025-03-28 15:01:15,353 s3_utils 3308 8324 Invalid file URL for deletion: 1.png
+INFO 2025-03-28 15:01:15,354 models 3308 8324 Deleted existing image: 1.png
+INFO 2025-03-28 15:01:15,354 s3_utils 3308 8324 Preparing to upload file
+INFO 2025-03-28 15:01:15,355 s3_utils 3308 8324 File name: 1.png
+INFO 2025-03-28 15:01:15,355 s3_utils 3308 8324 File size: 34650 bytes
+INFO 2025-03-28 15:01:15,355 s3_utils 3308 8324 Reported content type: image/png
+INFO 2025-03-28 15:01:15,356 s3_utils 3308 8324 Determined content type: image/png
+INFO 2025-03-28 15:01:15,356 s3_utils 3308 8324 Generated unique filename: polls/9fd98876-8f5f-4624-962d-54b286c4ed30.png
+ERROR 2025-03-28 15:01:16,746 s3_utils 3308 8324 S3 Upload Failure: An error occurred (ExpiredToken) when calling the PutObject operation: The provided token has expired.
+ERROR 2025-03-28 15:01:16,750 s3_utils 3308 8324 Traceback (most recent call last):
+  File "E:\Software\Django\online_voting\voting_app\s3_utils.py", line 61, in upload_file_to_s3
+    s3_client.upload_fileobj(
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\boto3\s3\inject.py", line 670, in upload_fileobj
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 111, in result
+    return self._coordinator.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 272, in result
+    raise self._exception
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 142, in __call__
+    return self._execute_main(kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 165, in _execute_main
+    return_value = self._main(**kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\upload.py", line 796, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 570, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 1031, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredToken) when calling the PutObject operation: The provided token has expired.
+
+ERROR 2025-03-28 15:01:16,754 models 3308 8324 Failed to upload image to S3
+INFO 2025-03-28 15:01:16,754 forms 3308 8324 Image upload result: False
+WARNING 2025-03-28 15:01:16,755 forms 3308 8324 Image upload failed
+INFO 2025-03-28 15:01:16,755 models 3308 8324 save_poll_image method called
+INFO 2025-03-28 15:01:16,756 models 3308 8324 Image file type: <class 'django.core.files.uploadedfile.InMemoryUploadedFile'>
+INFO 2025-03-28 15:01:16,756 models 3308 8324 Image file name: 1.png
+INFO 2025-03-28 15:01:16,756 models 3308 8324 Image file size: 34650
+INFO 2025-03-28 15:01:16,757 models 3308 8324 Image content type: image/png
+WARNING 2025-03-28 15:01:16,757 s3_utils 3308 8324 Invalid file URL for deletion: 1.png
+INFO 2025-03-28 15:01:16,757 models 3308 8324 Deleted existing image: 1.png
+INFO 2025-03-28 15:01:16,758 s3_utils 3308 8324 Preparing to upload file
+INFO 2025-03-28 15:01:16,758 s3_utils 3308 8324 File name: 1.png
+INFO 2025-03-28 15:01:16,758 s3_utils 3308 8324 File size: 34650 bytes
+INFO 2025-03-28 15:01:16,759 s3_utils 3308 8324 Reported content type: image/png
+INFO 2025-03-28 15:01:16,759 s3_utils 3308 8324 Determined content type: image/png
+INFO 2025-03-28 15:01:16,759 s3_utils 3308 8324 Generated unique filename: polls/a826cc8f-4f31-4225-979d-9cdff855294c.png
+ERROR 2025-03-28 15:01:17,912 s3_utils 3308 8324 S3 Upload Failure: An error occurred (ExpiredToken) when calling the PutObject operation: The provided token has expired.
+ERROR 2025-03-28 15:01:17,916 s3_utils 3308 8324 Traceback (most recent call last):
+  File "E:\Software\Django\online_voting\voting_app\s3_utils.py", line 61, in upload_file_to_s3
+    s3_client.upload_fileobj(
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\boto3\s3\inject.py", line 670, in upload_fileobj
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 111, in result
+    return self._coordinator.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 272, in result
+    raise self._exception
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 142, in __call__
+    return self._execute_main(kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 165, in _execute_main
+    return_value = self._main(**kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\upload.py", line 796, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 570, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 1031, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredToken) when calling the PutObject operation: The provided token has expired.
+
+ERROR 2025-03-28 15:01:17,926 models 3308 8324 Failed to upload image to S3
+INFO 2025-03-28 15:01:17,991 basehttp 3308 8324 "POST /polls/create/ HTTP/1.1" 200 22235
+WARNING 2025-03-28 15:01:18,695 log 3308 8324 Not Found: /favicon.ico
+WARNING 2025-03-28 15:01:18,695 basehttp 3308 8324 "GET /favicon.ico HTTP/1.1" 404 3821
+INFO 2025-03-28 15:01:20,015 basehttp 3308 8324 "GET /polls/create/ HTTP/1.1" 200 21503
+INFO 2025-03-28 15:01:33,357 forms 3308 8324 Image Validation - Name: 3.jpg
+INFO 2025-03-28 15:01:33,357 forms 3308 8324 Image Validation - Size: 46367 bytes
+INFO 2025-03-28 15:01:33,357 forms 3308 8324 Image Validation - Content Type: image/jpeg
+INFO 2025-03-28 15:01:33,358 forms 3308 8324 PollForm save method called
+INFO 2025-03-28 15:01:33,361 forms 3308 8324 Form cleaned data: {'title': 'sdfsdfsdsdffsdsdf', 'description': 'sdfsdfsdsdff', 'end_date': datetime.datetime(2025, 3, 29, 20, 6, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'poll_image': <InMemoryUploadedFile: 3.jpg (image/jpeg)>}
+INFO 2025-03-28 15:01:33,362 forms 3308 8324 Image found: 3.jpg
+INFO 2025-03-28 15:01:33,369 models 3308 8324 save_poll_image method called
+INFO 2025-03-28 15:01:33,369 models 3308 8324 Image file type: <class 'django.core.files.uploadedfile.InMemoryUploadedFile'>
+INFO 2025-03-28 15:01:33,370 models 3308 8324 Image file name: 3.jpg
+INFO 2025-03-28 15:01:33,370 models 3308 8324 Image file size: 46367
+INFO 2025-03-28 15:01:33,370 models 3308 8324 Image content type: image/jpeg
+WARNING 2025-03-28 15:01:33,371 s3_utils 3308 8324 Invalid file URL for deletion: 3.jpg
+INFO 2025-03-28 15:01:33,372 models 3308 8324 Deleted existing image: 3.jpg
+INFO 2025-03-28 15:01:33,372 s3_utils 3308 8324 Preparing to upload file
+INFO 2025-03-28 15:01:33,372 s3_utils 3308 8324 File name: 3.jpg
+INFO 2025-03-28 15:01:33,372 s3_utils 3308 8324 File size: 46367 bytes
+INFO 2025-03-28 15:01:33,373 s3_utils 3308 8324 Reported content type: image/jpeg
+INFO 2025-03-28 15:01:33,373 s3_utils 3308 8324 Determined content type: image/jpeg
+INFO 2025-03-28 15:01:33,373 s3_utils 3308 8324 Generated unique filename: polls/6663bfdd-cd55-47ef-a643-cccc12e1b1bc.jpg
+ERROR 2025-03-28 15:01:34,583 s3_utils 3308 8324 S3 Upload Failure: An error occurred (ExpiredToken) when calling the PutObject operation: The provided token has expired.
+ERROR 2025-03-28 15:01:34,585 s3_utils 3308 8324 Traceback (most recent call last):
+  File "E:\Software\Django\online_voting\voting_app\s3_utils.py", line 61, in upload_file_to_s3
+    s3_client.upload_fileobj(
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\boto3\s3\inject.py", line 670, in upload_fileobj
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 111, in result
+    return self._coordinator.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 272, in result
+    raise self._exception
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 142, in __call__
+    return self._execute_main(kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 165, in _execute_main
+    return_value = self._main(**kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\upload.py", line 796, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 570, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 1031, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredToken) when calling the PutObject operation: The provided token has expired.
+
+ERROR 2025-03-28 15:01:34,588 models 3308 8324 Failed to upload image to S3
+INFO 2025-03-28 15:01:34,589 forms 3308 8324 Image upload result: False
+WARNING 2025-03-28 15:01:34,589 forms 3308 8324 Image upload failed
+INFO 2025-03-28 15:01:34,589 models 3308 8324 save_poll_image method called
+INFO 2025-03-28 15:01:34,590 models 3308 8324 Image file type: <class 'django.core.files.uploadedfile.InMemoryUploadedFile'>
+INFO 2025-03-28 15:01:34,590 models 3308 8324 Image file name: 3.jpg
+INFO 2025-03-28 15:01:34,590 models 3308 8324 Image file size: 46367
+INFO 2025-03-28 15:01:34,591 models 3308 8324 Image content type: image/jpeg
+WARNING 2025-03-28 15:01:34,591 s3_utils 3308 8324 Invalid file URL for deletion: 3.jpg
+INFO 2025-03-28 15:01:34,591 models 3308 8324 Deleted existing image: 3.jpg
+INFO 2025-03-28 15:01:34,592 s3_utils 3308 8324 Preparing to upload file
+INFO 2025-03-28 15:01:34,592 s3_utils 3308 8324 File name: 3.jpg
+INFO 2025-03-28 15:01:34,592 s3_utils 3308 8324 File size: 46367 bytes
+INFO 2025-03-28 15:01:34,593 s3_utils 3308 8324 Reported content type: image/jpeg
+INFO 2025-03-28 15:01:34,593 s3_utils 3308 8324 Determined content type: image/jpeg
+INFO 2025-03-28 15:01:34,593 s3_utils 3308 8324 Generated unique filename: polls/a75c66a4-c1a1-4b72-a01b-9e74fffbd3d5.jpg
+ERROR 2025-03-28 15:01:35,843 s3_utils 3308 8324 S3 Upload Failure: An error occurred (ExpiredToken) when calling the PutObject operation: The provided token has expired.
+ERROR 2025-03-28 15:01:35,845 s3_utils 3308 8324 Traceback (most recent call last):
+  File "E:\Software\Django\online_voting\voting_app\s3_utils.py", line 61, in upload_file_to_s3
+    s3_client.upload_fileobj(
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\boto3\s3\inject.py", line 670, in upload_fileobj
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 111, in result
+    return self._coordinator.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 272, in result
+    raise self._exception
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 142, in __call__
+    return self._execute_main(kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 165, in _execute_main
+    return_value = self._main(**kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\upload.py", line 796, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 570, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 1031, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredToken) when calling the PutObject operation: The provided token has expired.
+
+ERROR 2025-03-28 15:01:35,850 models 3308 8324 Failed to upload image to S3
+INFO 2025-03-28 15:01:35,859 basehttp 3308 8324 "POST /polls/create/ HTTP/1.1" 200 22248
+INFO 2025-03-28 15:02:44,583 autoreload 15652 13872 Watching for file changes with StatReloader
+INFO 2025-03-28 15:02:55,953 forms 15652 13652 Image Validation - Name: 3.jpg
+INFO 2025-03-28 15:02:55,954 forms 15652 13652 Image Validation - Size: 46367 bytes
+INFO 2025-03-28 15:02:55,954 forms 15652 13652 Image Validation - Content Type: image/jpeg
+INFO 2025-03-28 15:02:55,955 forms 15652 13652 PollForm save method called
+INFO 2025-03-28 15:02:55,955 forms 15652 13652 Form cleaned data: {'title': 'sdfsdfsdsdffsdsdf', 'description': 'sdfsdfsdsdff', 'end_date': datetime.datetime(2025, 3, 29, 20, 6, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'poll_image': <InMemoryUploadedFile: 3.jpg (image/jpeg)>}
+INFO 2025-03-28 15:02:55,956 forms 15652 13652 Image found: 3.jpg
+INFO 2025-03-28 15:02:55,961 models 15652 13652 save_poll_image method called
+INFO 2025-03-28 15:02:55,961 models 15652 13652 Image file type: <class 'django.core.files.uploadedfile.InMemoryUploadedFile'>
+INFO 2025-03-28 15:02:55,962 models 15652 13652 Image file name: 3.jpg
+INFO 2025-03-28 15:02:55,962 models 15652 13652 Image file size: 46367
+INFO 2025-03-28 15:02:55,964 models 15652 13652 Image content type: image/jpeg
+WARNING 2025-03-28 15:02:55,967 s3_utils 15652 13652 Invalid file URL for deletion: 3.jpg
+INFO 2025-03-28 15:02:55,968 models 15652 13652 Deleted existing image: 3.jpg
+INFO 2025-03-28 15:02:55,968 s3_utils 15652 13652 Preparing to upload file
+INFO 2025-03-28 15:02:55,969 s3_utils 15652 13652 File name: 3.jpg
+INFO 2025-03-28 15:02:55,969 s3_utils 15652 13652 File size: 46367 bytes
+INFO 2025-03-28 15:02:55,969 s3_utils 15652 13652 Reported content type: image/jpeg
+INFO 2025-03-28 15:02:55,970 s3_utils 15652 13652 Determined content type: image/jpeg
+INFO 2025-03-28 15:02:55,970 s3_utils 15652 13652 Generated unique filename: polls/4864e6d9-68a3-40c1-a8c6-c3a4f83f5ff8.jpg
+ERROR 2025-03-28 15:02:57,313 s3_utils 15652 13652 S3 Upload Failure: An error occurred (AccessControlListNotSupported) when calling the PutObject operation: The bucket does not allow ACLs
+ERROR 2025-03-28 15:02:57,318 s3_utils 15652 13652 Traceback (most recent call last):
+  File "E:\Software\Django\online_voting\voting_app\s3_utils.py", line 61, in upload_file_to_s3
+    s3_client.upload_fileobj(
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\boto3\s3\inject.py", line 670, in upload_fileobj
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 111, in result
+    return self._coordinator.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 272, in result
+    raise self._exception
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 142, in __call__
+    return self._execute_main(kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 165, in _execute_main
+    return_value = self._main(**kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\upload.py", line 796, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 570, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 1031, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessControlListNotSupported) when calling the PutObject operation: The bucket does not allow ACLs
+
+ERROR 2025-03-28 15:02:57,324 models 15652 13652 Failed to upload image to S3
+INFO 2025-03-28 15:02:57,325 forms 15652 13652 Image upload result: False
+WARNING 2025-03-28 15:02:57,325 forms 15652 13652 Image upload failed
+INFO 2025-03-28 15:02:57,326 models 15652 13652 save_poll_image method called
+INFO 2025-03-28 15:02:57,327 models 15652 13652 Image file type: <class 'django.core.files.uploadedfile.InMemoryUploadedFile'>
+INFO 2025-03-28 15:02:57,327 models 15652 13652 Image file name: 3.jpg
+INFO 2025-03-28 15:02:57,328 models 15652 13652 Image file size: 46367
+INFO 2025-03-28 15:02:57,328 models 15652 13652 Image content type: image/jpeg
+WARNING 2025-03-28 15:02:57,329 s3_utils 15652 13652 Invalid file URL for deletion: 3.jpg
+INFO 2025-03-28 15:02:57,329 models 15652 13652 Deleted existing image: 3.jpg
+INFO 2025-03-28 15:02:57,329 s3_utils 15652 13652 Preparing to upload file
+INFO 2025-03-28 15:02:57,330 s3_utils 15652 13652 File name: 3.jpg
+INFO 2025-03-28 15:02:57,330 s3_utils 15652 13652 File size: 46367 bytes
+INFO 2025-03-28 15:02:57,331 s3_utils 15652 13652 Reported content type: image/jpeg
+INFO 2025-03-28 15:02:57,331 s3_utils 15652 13652 Determined content type: image/jpeg
+INFO 2025-03-28 15:02:57,332 s3_utils 15652 13652 Generated unique filename: polls/dd1ec575-ceb6-4c13-bb53-ce854b7b6ba1.jpg
+ERROR 2025-03-28 15:02:58,504 s3_utils 15652 13652 S3 Upload Failure: An error occurred (AccessControlListNotSupported) when calling the PutObject operation: The bucket does not allow ACLs
+ERROR 2025-03-28 15:02:58,511 s3_utils 15652 13652 Traceback (most recent call last):
+  File "E:\Software\Django\online_voting\voting_app\s3_utils.py", line 61, in upload_file_to_s3
+    s3_client.upload_fileobj(
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\boto3\s3\inject.py", line 670, in upload_fileobj
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 111, in result
+    return self._coordinator.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\futures.py", line 272, in result
+    raise self._exception
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 142, in __call__
+    return self._execute_main(kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\tasks.py", line 165, in _execute_main
+    return_value = self._main(**kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\s3transfer\upload.py", line 796, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 570, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\context.py", line 124, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python312\site-packages\botocore\client.py", line 1031, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessControlListNotSupported) when calling the PutObject operation: The bucket does not allow ACLs
+
+ERROR 2025-03-28 15:02:58,522 models 15652 13652 Failed to upload image to S3
+INFO 2025-03-28 15:02:58,586 basehttp 15652 13652 "POST /polls/create/ HTTP/1.1" 200 22248
+WARNING 2025-03-28 15:02:58,645 log 15652 13652 Not Found: /favicon.ico
+WARNING 2025-03-28 15:02:58,646 basehttp 15652 13652 "GET /favicon.ico HTTP/1.1" 404 3821
+INFO 2025-03-28 15:03:00,535 basehttp 15652 13652 "GET /polls/create/ HTTP/1.1" 200 21503
+INFO 2025-03-28 15:07:17,033 autoreload 17044 11952 Watching for file changes with StatReloader
+INFO 2025-03-28 15:07:18,247 basehttp 17044 7736 "GET / HTTP/1.1" 200 10500
+INFO 2025-03-28 15:07:19,073 basehttp 17044 7736 "GET / HTTP/1.1" 200 10500
+INFO 2025-03-28 15:07:19,799 basehttp 17044 7736 "GET /polls/create/ HTTP/1.1" 200 21503
+INFO 2025-03-28 15:07:43,595 forms 17044 7736 Image Validation - Name: 3.jpg
+INFO 2025-03-28 15:07:43,595 forms 17044 7736 Image Validation - Size: 46367 bytes
+INFO 2025-03-28 15:07:43,596 forms 17044 7736 Image Validation - Content Type: image/jpeg
+INFO 2025-03-28 15:07:43,596 forms 17044 7736 PollForm save method called
+INFO 2025-03-28 15:07:43,597 forms 17044 7736 Form cleaned data: {'title': 'sdfsdfsdfsds', 'description': 'sdfsddasfdsf', 'end_date': datetime.datetime(2025, 3, 29, 17, 9, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'poll_image': <InMemoryUploadedFile: 3.jpg (image/jpeg)>}
+INFO 2025-03-28 15:07:43,597 forms 17044 7736 Image found: 3.jpg
+INFO 2025-03-28 15:07:43,604 models 17044 7736 save_poll_image method called
+INFO 2025-03-28 15:07:43,605 models 17044 7736 Image file type: <class 'django.core.files.uploadedfile.InMemoryUploadedFile'>
+INFO 2025-03-28 15:07:43,605 models 17044 7736 Image file name: 3.jpg
+INFO 2025-03-28 15:07:43,606 models 17044 7736 Image file size: 46367
+INFO 2025-03-28 15:07:43,608 models 17044 7736 Image content type: image/jpeg
+WARNING 2025-03-28 15:07:43,608 s3_utils 17044 7736 Invalid file URL for deletion: 3.jpg
+INFO 2025-03-28 15:07:43,608 models 17044 7736 Deleted existing image: 3.jpg
+INFO 2025-03-28 15:07:43,609 s3_utils 17044 7736 Preparing to upload file
+INFO 2025-03-28 15:07:43,612 s3_utils 17044 7736 File name: 3.jpg
+INFO 2025-03-28 15:07:43,613 s3_utils 17044 7736 File size: 46367 bytes
+INFO 2025-03-28 15:07:43,613 s3_utils 17044 7736 Reported content type: image/jpeg
+INFO 2025-03-28 15:07:43,614 s3_utils 17044 7736 Determined content type: image/jpeg
+INFO 2025-03-28 15:07:43,614 s3_utils 17044 7736 Generated unique filename: polls/4274b56b-755c-4b79-a058-a5e93acdd572.jpg
+INFO 2025-03-28 15:07:45,392 s3_utils 17044 7736 File successfully uploaded to: https://voting-bucket-app.s3.eu-west-1.amazonaws.com/polls/4274b56b-755c-4b79-a058-a5e93acdd572.jpg
+INFO 2025-03-28 15:07:45,400 models 17044 7736 Image uploaded successfully. S3 URL: https://voting-bucket-app.s3.eu-west-1.amazonaws.com/polls/4274b56b-755c-4b79-a058-a5e93acdd572.jpg
+INFO 2025-03-28 15:07:45,401 forms 17044 7736 Image upload result: True
+INFO 2025-03-28 15:07:45,402 models 17044 7736 save_poll_image method called
+INFO 2025-03-28 15:07:45,402 models 17044 7736 Image file type: <class 'django.core.files.uploadedfile.InMemoryUploadedFile'>
+INFO 2025-03-28 15:07:45,403 models 17044 7736 Image file name: 3.jpg
+INFO 2025-03-28 15:07:45,403 models 17044 7736 Image file size: 46367
+INFO 2025-03-28 15:07:45,404 models 17044 7736 Image content type: image/jpeg
+INFO 2025-03-28 15:07:46,585 s3_utils 17044 7736 File deleted successfully from S3: https://voting-bucket-app.s3.eu-west-1.amazonaws.com/polls/4274b56b-755c-4b79-a058-a5e93acdd572.jpg
+INFO 2025-03-28 15:07:46,590 models 17044 7736 Deleted existing image: https://voting-bucket-app.s3.eu-west-1.amazonaws.com/polls/4274b56b-755c-4b79-a058-a5e93acdd572.jpg
+INFO 2025-03-28 15:07:46,591 s3_utils 17044 7736 Preparing to upload file
+INFO 2025-03-28 15:07:46,591 s3_utils 17044 7736 File name: 3.jpg
+INFO 2025-03-28 15:07:46,592 s3_utils 17044 7736 File size: 46367 bytes
+INFO 2025-03-28 15:07:46,592 s3_utils 17044 7736 Reported content type: image/jpeg
+INFO 2025-03-28 15:07:46,593 s3_utils 17044 7736 Determined content type: image/jpeg
+INFO 2025-03-28 15:07:46,595 s3_utils 17044 7736 Generated unique filename: polls/9ba9ece3-a02c-4b6c-a2c9-4d187c4d5c76.jpg
+INFO 2025-03-28 15:07:48,016 s3_utils 17044 7736 File successfully uploaded to: https://voting-bucket-app.s3.eu-west-1.amazonaws.com/polls/9ba9ece3-a02c-4b6c-a2c9-4d187c4d5c76.jpg
+INFO 2025-03-28 15:07:48,022 models 17044 7736 Image uploaded successfully. S3 URL: https://voting-bucket-app.s3.eu-west-1.amazonaws.com/polls/9ba9ece3-a02c-4b6c-a2c9-4d187c4d5c76.jpg
+INFO 2025-03-28 15:07:48,047 aws_utils 17044 7736 Attempting to create AWS clients
+INFO 2025-03-28 15:07:48,048 aws_utils 17044 7736 AWS_ACCESS_KEY_ID: ASIATUYJP7SUF7RV3TPN
+INFO 2025-03-28 15:07:48,048 aws_utils 17044 7736 AWS_SECRET_ACCESS_KEY: ObXd/vcBXzQIwHaOeVnpXpuGWBcFBSczW8jXhKh0
+INFO 2025-03-28 15:07:48,048 aws_utils 17044 7736 AWS_REGION: eu-west-1
+INFO 2025-03-28 15:07:48,049 aws_utils 17044 7736 AWS_SNS_TOPIC_ARN: arn:aws:sns:eu-west-1:250738637992:poll-notifications
+INFO 2025-03-28 15:07:48,049 aws_utils 17044 7736 AWS_LAMBDA_FUNCTION_ARN: arn:aws:lambda:eu-west-1:250738637992:function:pollNotificationLambda
+INFO 2025-03-28 15:07:49,478 aws_utils 17044 7736 SNS notification sent for poll: sdfsdfsdfsds
+INFO 2025-03-28 15:07:49,482 aws_utils 17044 7736 Attempting to create AWS clients
+INFO 2025-03-28 15:07:49,482 aws_utils 17044 7736 AWS_ACCESS_KEY_ID: ASIATUYJP7SUF7RV3TPN
+INFO 2025-03-28 15:07:49,483 aws_utils 17044 7736 AWS_SECRET_ACCESS_KEY: ObXd/vcBXzQIwHaOeVnpXpuGWBcFBSczW8jXhKh0
+INFO 2025-03-28 15:07:49,484 aws_utils 17044 7736 AWS_REGION: eu-west-1
+INFO 2025-03-28 15:07:49,485 aws_utils 17044 7736 AWS_SNS_TOPIC_ARN: arn:aws:sns:eu-west-1:250738637992:poll-notifications
+INFO 2025-03-28 15:07:49,485 aws_utils 17044 7736 AWS_LAMBDA_FUNCTION_ARN: arn:aws:lambda:eu-west-1:250738637992:function:pollNotificationLambda
+INFO 2025-03-28 15:07:50,685 aws_utils 17044 7736 Lambda function invoked for poll: sdfsdfsdfsds
+INFO 2025-03-28 15:07:50,691 basehttp 17044 7736 "POST /polls/create/ HTTP/1.1" 302 0
+INFO 2025-03-28 15:07:50,722 basehttp 17044 7736 "GET /polls/ HTTP/1.1" 200 55951
+INFO 2025-03-28 15:08:25,845 basehttp 17044 7736 "GET /polls/32/update/ HTTP/1.1" 200 21763
+INFO 2025-03-28 15:08:31,147 basehttp 17044 7736 "GET / HTTP/1.1" 200 10500
+INFO 2025-03-28 15:08:34,520 basehttp 17044 7736 "GET / HTTP/1.1" 200 10500
+INFO 2025-03-28 15:08:43,711 basehttp 17044 7736 "GET / HTTP/1.1" 200 10500
+WARNING 2025-03-28 15:08:44,373 log 17044 7736 Not Found: /favicon.ico
+WARNING 2025-03-28 15:08:44,374 basehttp 17044 7736 "GET /favicon.ico HTTP/1.1" 404 3821
+INFO 2025-03-28 15:08:46,945 basehttp 17044 7736 "GET /polls/create/ HTTP/1.1" 200 21503
+INFO 2025-03-28 15:08:48,476 basehttp 17044 7736 "GET /polls/ HTTP/1.1" 200 55528
+INFO 2025-03-28 15:08:50,206 basehttp 17044 7736 "GET /polls/32/delete/ HTTP/1.1" 200 9261
+INFO 2025-03-28 15:08:51,020 basehttp 17044 7736 "POST /polls/32/delete/ HTTP/1.1" 302 0
+INFO 2025-03-28 15:08:51,035 basehttp 17044 7736 "GET /polls/ HTTP/1.1" 200 50793
+INFO 2025-03-28 15:08:52,783 basehttp 17044 7736 "GET /polls/31/delete/ HTTP/1.1" 200 8921
+INFO 2025-03-28 15:08:53,559 basehttp 17044 7736 "POST /polls/31/delete/ HTTP/1.1" 302 0
+INFO 2025-03-28 15:08:53,572 basehttp 17044 7736 "GET /polls/ HTTP/1.1" 200 46053
+INFO 2025-03-28 15:08:54,967 basehttp 17044 7736 "GET /polls/30/delete/ HTTP/1.1" 200 8921
+INFO 2025-03-28 15:08:55,649 basehttp 17044 7736 "POST /polls/30/delete/ HTTP/1.1" 302 0
+INFO 2025-03-28 15:08:55,662 basehttp 17044 7736 "GET /polls/ HTTP/1.1" 200 41313
+INFO 2025-03-28 15:08:56,886 basehttp 17044 7736 "GET /polls/29/delete/ HTTP/1.1" 200 8915
+INFO 2025-03-28 15:08:57,639 basehttp 17044 7736 "POST /polls/29/delete/ HTTP/1.1" 302 0
+INFO 2025-03-28 15:08:57,651 basehttp 17044 7736 "GET /polls/ HTTP/1.1" 200 36577
+INFO 2025-03-28 15:08:59,443 basehttp 17044 7736 "GET /polls/ HTTP/1.1" 200 36577
+WARNING 2025-03-28 15:08:59,937 log 17044 7736 Not Found: /favicon.ico
+WARNING 2025-03-28 15:08:59,938 basehttp 17044 7736 "GET /favicon.ico HTTP/1.1" 404 3821
+INFO 2025-03-28 15:09:02,103 basehttp 17044 7736 "GET /polls/ HTTP/1.1" 200 36577
+INFO 2025-03-28 15:09:02,710 basehttp 17044 7736 "GET /polls/ HTTP/1.1" 200 36577
+INFO 2025-03-28 15:09:02,952 basehttp 17044 7736 "GET /polls/ HTTP/1.1" 200 36577
+INFO 2025-03-28 15:09:03,152 basehttp 17044 7736 "GET /polls/ HTTP/1.1" 200 36577
+INFO 2025-03-28 15:09:03,288 basehttp 17044 7736 "GET /polls/ HTTP/1.1" 200 36577
+INFO 2025-03-28 15:09:04,746 basehttp 17044 7736 "GET /polls/28/ HTTP/1.1" 200 12503
+INFO 2025-03-28 15:09:06,413 basehttp 17044 7736 "GET /polls/28/delete/ HTTP/1.1" 200 8915
+INFO 2025-03-28 15:09:07,323 basehttp 17044 7736 "POST /polls/28/delete/ HTTP/1.1" 302 0
+INFO 2025-03-28 15:09:07,334 basehttp 17044 7736 "GET /polls/ HTTP/1.1" 200 31841
+INFO 2025-03-28 15:09:11,079 basehttp 17044 7736 "GET /polls/27/delete/ HTTP/1.1" 200 8915
+INFO 2025-03-28 15:09:12,326 basehttp 17044 7736 "POST /polls/27/delete/ HTTP/1.1" 302 0
+INFO 2025-03-28 15:09:12,335 basehttp 17044 7736 "GET /polls/ HTTP/1.1" 200 27105
+INFO 2025-03-28 15:09:14,143 basehttp 17044 7736 "GET /polls/26/delete/ HTTP/1.1" 200 8909
+INFO 2025-03-28 15:09:14,748 basehttp 17044 7736 "POST /polls/26/delete/ HTTP/1.1" 302 0
+INFO 2025-03-28 15:09:14,758 basehttp 17044 7736 "GET /polls/ HTTP/1.1" 200 22375
+INFO 2025-03-28 15:09:16,944 basehttp 17044 7736 "GET /polls/25/delete/ HTTP/1.1" 200 8909
+INFO 2025-03-28 15:09:17,609 basehttp 17044 7736 "POST /polls/25/delete/ HTTP/1.1" 302 0
+INFO 2025-03-28 15:09:17,618 basehttp 17044 7736 "GET /polls/ HTTP/1.1" 200 17645
+INFO 2025-03-28 15:09:20,174 basehttp 17044 7736 "GET /polls/24/delete/ HTTP/1.1" 200 8909
+INFO 2025-03-28 15:09:20,870 basehttp 17044 7736 "POST /polls/24/delete/ HTTP/1.1" 302 0
+INFO 2025-03-28 15:09:20,879 basehttp 17044 7736 "GET /polls/ HTTP/1.1" 200 12915
+INFO 2025-03-28 15:09:56,949 basehttp 17044 7736 "GET / HTTP/1.1" 200 10500
+INFO 2025-03-28 17:22:15,162 basehttp 17044 13924 "GET / HTTP/1.1" 200 10500
+INFO 2025-03-28 17:28:37,689 autoreload 10988 9192 Watching for file changes with StatReloader
+INFO 2025-03-28 17:28:44,335 basehttp 10988 14696 "GET / HTTP/1.1" 200 10500
+WARNING 2025-03-28 17:28:45,062 log 10988 14696 Not Found: /favicon.ico
+WARNING 2025-03-28 17:28:45,065 basehttp 10988 14696 "GET /favicon.ico HTTP/1.1" 404 3821
+INFO 2025-03-28 17:28:49,840 basehttp 10988 14696 "GET /polls/create/ HTTP/1.1" 200 21503
+INFO 2025-03-28 17:33:54,744 forms 10988 8292 Image Validation - Name: 1.png
+INFO 2025-03-28 17:33:54,745 forms 10988 8292 Image Validation - Size: 34650 bytes
+INFO 2025-03-28 17:33:54,745 forms 10988 8292 Image Validation - Content Type: image/png
+INFO 2025-03-28 17:33:54,746 forms 10988 8292 PollForm save method called
+INFO 2025-03-28 17:33:54,747 forms 10988 8292 Form cleaned data: {'title': 'Which Social Media Platform Do You Use the Most?', 'description': 'We want to know which social media platform you use the most in your daily life. Vote below and let us know your favorite!', 'end_date': datetime.datetime(2025, 3, 31, 18, 32, tzinfo=zoneinfo.ZoneInfo(key='UTC')), 'poll_image': <InMemoryUploadedFile: 1.png (image/png)>}
+INFO 2025-03-28 17:33:54,747 forms 10988 8292 Image found: 1.png
+INFO 2025-03-28 17:33:54,752 models 10988 8292 save_poll_image method called
+INFO 2025-03-28 17:33:54,753 models 10988 8292 Image file type: <class 'django.core.files.uploadedfile.InMemoryUploadedFile'>
+INFO 2025-03-28 17:33:54,754 models 10988 8292 Image file name: 1.png
+INFO 2025-03-28 17:33:54,755 models 10988 8292 Image file size: 34650
+INFO 2025-03-28 17:33:54,756 models 10988 8292 Image content type: image/png
+WARNING 2025-03-28 17:33:54,759 s3_utils 10988 8292 Invalid file URL for deletion: 1.png
+INFO 2025-03-28 17:33:54,764 models 10988 8292 Deleted existing image: 1.png
+INFO 2025-03-28 17:33:54,764 s3_utils 10988 8292 Preparing to upload file
+INFO 2025-03-28 17:33:54,765 s3_utils 10988 8292 File name: 1.png
+INFO 2025-03-28 17:33:54,765 s3_utils 10988 8292 File size: 34650 bytes
+INFO 2025-03-28 17:33:54,765 s3_utils 10988 8292 Reported content type: image/png
+INFO 2025-03-28 17:33:54,766 s3_utils 10988 8292 Determined content type: image/png
+INFO 2025-03-28 17:33:54,767 s3_utils 10988 8292 Generated unique filename: polls/bc3237d5-fc25-4b8c-9467-fe427244aa1a.png
+INFO 2025-03-28 17:33:56,733 s3_utils 10988 8292 File successfully uploaded to: https://voting-bucket-app.s3.eu-west-1.amazonaws.com/polls/bc3237d5-fc25-4b8c-9467-fe427244aa1a.png
+INFO 2025-03-28 17:33:56,739 models 10988 8292 Image uploaded successfully. S3 URL: https://voting-bucket-app.s3.eu-west-1.amazonaws.com/polls/bc3237d5-fc25-4b8c-9467-fe427244aa1a.png
+INFO 2025-03-28 17:33:56,740 forms 10988 8292 Image upload result: True
+INFO 2025-03-28 17:33:56,740 models 10988 8292 save_poll_image method called
+INFO 2025-03-28 17:33:56,741 models 10988 8292 Image file type: <class 'django.core.files.uploadedfile.InMemoryUploadedFile'>
+INFO 2025-03-28 17:33:56,741 models 10988 8292 Image file name: 1.png
+INFO 2025-03-28 17:33:56,741 models 10988 8292 Image file size: 34650
+INFO 2025-03-28 17:33:56,742 models 10988 8292 Image content type: image/png
+INFO 2025-03-28 17:33:57,863 s3_utils 10988 8292 File deleted successfully from S3: https://voting-bucket-app.s3.eu-west-1.amazonaws.com/polls/bc3237d5-fc25-4b8c-9467-fe427244aa1a.png
+INFO 2025-03-28 17:33:57,866 models 10988 8292 Deleted existing image: https://voting-bucket-app.s3.eu-west-1.amazonaws.com/polls/bc3237d5-fc25-4b8c-9467-fe427244aa1a.png
+INFO 2025-03-28 17:33:57,867 s3_utils 10988 8292 Preparing to upload file
+INFO 2025-03-28 17:33:57,867 s3_utils 10988 8292 File name: 1.png
+INFO 2025-03-28 17:33:57,867 s3_utils 10988 8292 File size: 34650 bytes
+INFO 2025-03-28 17:33:57,868 s3_utils 10988 8292 Reported content type: image/png
+INFO 2025-03-28 17:33:57,868 s3_utils 10988 8292 Determined content type: image/png
+INFO 2025-03-28 17:33:57,868 s3_utils 10988 8292 Generated unique filename: polls/3d7dcfd9-7e1c-4c9b-9206-c61e72a451ec.png
+INFO 2025-03-28 17:33:59,241 s3_utils 10988 8292 File successfully uploaded to: https://voting-bucket-app.s3.eu-west-1.amazonaws.com/polls/3d7dcfd9-7e1c-4c9b-9206-c61e72a451ec.png
+INFO 2025-03-28 17:33:59,254 models 10988 8292 Image uploaded successfully. S3 URL: https://voting-bucket-app.s3.eu-west-1.amazonaws.com/polls/3d7dcfd9-7e1c-4c9b-9206-c61e72a451ec.png
+INFO 2025-03-28 17:33:59,293 aws_utils 10988 8292 Attempting to create AWS clients
+INFO 2025-03-28 17:33:59,294 aws_utils 10988 8292 AWS_ACCESS_KEY_ID: ASIATUYJP7SUD3ZC334B
+INFO 2025-03-28 17:33:59,295 aws_utils 10988 8292 AWS_SECRET_ACCESS_KEY: N0FJz4bVWsL8uDx/cP24CD+RmQbLpc1MLke+dgGo
+INFO 2025-03-28 17:33:59,295 aws_utils 10988 8292 AWS_REGION: eu-west-1
+INFO 2025-03-28 17:33:59,296 aws_utils 10988 8292 AWS_SNS_TOPIC_ARN: arn:aws:sns:eu-west-1:250738637992:poll-notifications
+INFO 2025-03-28 17:33:59,296 aws_utils 10988 8292 AWS_LAMBDA_FUNCTION_ARN: arn:aws:lambda:eu-west-1:250738637992:function:pollNotificationLambda
+INFO 2025-03-28 17:34:00,771 aws_utils 10988 8292 SNS notification sent for poll: Which Social Media Platform Do You Use the Most?
+INFO 2025-03-28 17:34:00,774 aws_utils 10988 8292 Attempting to create AWS clients
+INFO 2025-03-28 17:34:00,774 aws_utils 10988 8292 AWS_ACCESS_KEY_ID: ASIATUYJP7SUD3ZC334B
+INFO 2025-03-28 17:34:00,775 aws_utils 10988 8292 AWS_SECRET_ACCESS_KEY: N0FJz4bVWsL8uDx/cP24CD+RmQbLpc1MLke+dgGo
+INFO 2025-03-28 17:34:00,775 aws_utils 10988 8292 AWS_REGION: eu-west-1
+INFO 2025-03-28 17:34:00,776 aws_utils 10988 8292 AWS_SNS_TOPIC_ARN: arn:aws:sns:eu-west-1:250738637992:poll-notifications
+INFO 2025-03-28 17:34:00,776 aws_utils 10988 8292 AWS_LAMBDA_FUNCTION_ARN: arn:aws:lambda:eu-west-1:250738637992:function:pollNotificationLambda
+INFO 2025-03-28 17:34:01,948 aws_utils 10988 8292 Lambda function invoked for poll: Which Social Media Platform Do You Use the Most?
+INFO 2025-03-28 17:34:01,958 basehttp 10988 8292 "POST /polls/create/ HTTP/1.1" 302 0
+INFO 2025-03-28 17:34:01,982 basehttp 10988 8292 "GET /polls/ HTTP/1.1" 200 17896
+INFO 2025-03-28 17:34:34,383 basehttp 10988 8292 "GET /polls/33/ HTTP/1.1" 200 18872

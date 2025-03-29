@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Delete Poll | Online Voting{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6 mx-auto">
+        <div class="card border-danger">
+            <div class="card-header bg-danger text-white">
+                <h2 class="card-title mb-0">Delete Poll</h2>
+            </div>
+            <div class="card-body">
+                <h4>Are you sure you want to delete "{{ poll.title }}"?</h4>
+                <p>This action cannot be undone. All votes and choices associated with this poll will be permanently deleted.</p>
+                
+                <div class="alert alert-warning">
+                    <h5>Poll details:</h5>
+                    <ul>
+                        <li><strong>Title:</strong> {{ poll.title }}</li>
+                        <li><strong>Created:</strong> {{ poll.created_at|date:"M d, Y" }}</li>
+                        <li><strong>Number of choices:</strong> {{ poll.choices.count }}</li>
+                        <li><strong>Number of votes:</strong> 
+                            {% with total_votes=0 %}
+                                {% for choice in poll.choices.all %}
+                                    {% with total_votes=total_votes|add:choice.votes.count %}{% endwith %}
+                                {% endfor %}
+                                {{ total_votes }}
+                            {% endwith %}
+                        </li>
+                    </ul>
+                </div>
+                
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-danger">Yes, Delete Poll</button>
+                        <a href="{% url 'poll_detail' poll.id %}" class="btn btn-outline-secondary">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+
+{% block title %}Online Voting - Polls{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 gap-3">
+        <h1 class="fw-bold mb-0">All Polls</h1>
+        <a href="{% url 'poll_create' %}" class="btn btn-primary px-4 py-2">
+            <i class="bi bi-plus-circle me-2"></i>Create New Poll
+        </a>
+    </div>
+    
+    {% if polls %}
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+            {% for poll in polls %}
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 rounded-3 transition-hover">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="card-title fw-semibold mb-0">{{ poll.title }}</h5>
+                                {% if poll.is_active %}
+                                    <span class="badge bg-success rounded-pill px-3 py-2">
+                                        <i class="bi bi-check-circle me-1"></i>Active
+                                    </span>
+                                {% else %}
+                                    <span class="badge bg-secondary rounded-pill px-3 py-2">
+                                        <i class="bi bi-lock me-1"></i>Closed
+                                    </span>
+                                {% endif %}
+                            </div>
+                            
+                            <p class="card-text mb-4">{{ poll.description|truncatewords:20 }}</p>
+                            
+                            <div class="d-flex justify-content-between align-items-center text-muted small mb-2">
+                                <div>
+                                    <i class="bi bi-calendar3 me-1"></i>Created:
+                                </div>
+                                <div>{{ poll.created_at|date:"M d, Y" }}</div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center text-muted small mb-3">
+                                <div>
+                                    <i class="bi bi-clock me-1"></i>Ends:
+                                </div>
+                                <div>{{ poll.end_date|date:"M d, Y H:i" }}</div>
+                            </div>
+
+                            <div class="progress mb-2" style="height: 6px;">
+                                {% if poll.is_active %}
+                                    {% with days_passed=poll.days_active days_total=poll.days_duration %}
+                                        {% if days_total > 0 %}
+                                            {% widthratio days_passed days_total 100 as progress_value %}
+                                        {% else %}
+                                            {% with progress_value=100 %}{% endwith %}
+                                        {% endif %}
+                                        <div class="progress-bar bg-success" role="progressbar" 
+                                             style="width: {{ progress_value }}%" 
+                                             aria-valuenow="{{ progress_value }}" 
+                                             aria-valuemin="0" 
+                                             aria-valuemax="100"></div>
+                                    {% endwith %}
+                                {% else %}
+                                    <div class="progress-bar bg-secondary" role="progressbar" 
+                                         style="width: 100%" 
+                                         aria-valuenow="100" 
+                                         aria-valuemin="0" 
+                                         aria-valuemax="100"></div>
+                                {% endif %}
+                            </div>
+                            
+                            <div class="text-end text-muted small">
+                                {% if poll.is_active %}
+                                    {% if poll.days_remaining > 0 %}
+                                        {{ poll.days_remaining }} day{{ poll.days_remaining|pluralize }} remaining
+                                    {% else %}
+                                        Ending today
+                                    {% endif %}
+                                {% else %}
+                                    Ended
+                                {% endif %}
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer bg-white py-3 border-top">
+                            <div class="d-flex gap-2">
+                                <a href="{% url 'poll_detail' poll.id %}" class="btn btn-primary flex-grow-1">
+                                    <i class="bi bi-check2-square me-1"></i>Vote
+                                </a>
+                                <div class="dropdown">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="pollActions{{ poll.id }}" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-three-dots"></i>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="pollActions{{ poll.id }}">
+                                        <li>
+                                            <a class="dropdown-item" href="{% url 'poll_update' poll.id %}">
+                                                <i class="bi bi-pencil me-2"></i>Edit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="{% url 'poll_detail' poll.id %}">
+                                                <i class="bi bi-bar-chart me-2"></i>Results
+                                            </a>
+                                        </li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li>
+                                            <a class="dropdown-item text-danger" href="{% url 'poll_delete' poll.id %}">
+                                                <i class="bi bi-trash me-2"></i>Delete
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        
+    {% else %}
+        <div class="card shadow-sm border-0 rounded-3 p-4 text-center">
+            <div class="py-5">
+                <i class="bi bi-clipboard-data text-muted" style="font-size: 4rem;"></i>
+                <h4 class="mt-4 mb-3">No polls available yet</h4>
+                <p class="text-muted mb-4">Create your first poll to start collecting votes!</p>
+                <a href="{% url 'poll_create' %}" class="btn btn-primary px-4 py-2">
+                    <i class="bi bi-plus-circle me-2"></i>Create Your First Poll
+                </a>
+            </div>
+        </div>
+    {% endif %}
+</div>
+
+<!-- Add this custom CSS to your base template or in a style block -->
+<style>
+    .transition-hover {
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+    .transition-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,352 @@
+{% extends 'base.html' %}
+
+{% block title %}Create New Poll | Online Voting{% endblock %}
+
+{% block extra_css %}
+<style>
+    .poll-form-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .form-header {
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        border-radius: 12px 12px 0 0;
+        padding: 1.5rem;
+        margin-bottom: 0;
+        border: none;
+    }
+    
+    .form-header h2 {
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        margin: 0;
+    }
+    
+    .form-body {
+        padding: 2rem;
+    }
+    
+    .poll-card {
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-bottom: 2rem;
+    }
+    
+    .section-divider {
+        display: flex;
+        align-items: center;
+        margin: 2rem 0;
+    }
+    
+    .section-divider:before,
+    .section-divider:after {
+        content: "";
+        flex: 1;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .section-divider h3 {
+        margin: 0 1rem;
+        color: var(--primary-color);
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+    
+    .choice-form {
+        margin-bottom: 1rem;
+        transition: all 0.3s ease;
+    }
+    
+    .choice-form:hover {
+        transform: translateX(5px);
+    }
+    
+    .input-group-text {
+        background-color: var(--secondary-color);
+        color: white;
+        border: none;
+        font-weight: 500;
+    }
+    
+    .btn-choice {
+        border-radius: 0 6px 6px 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .remove-choice {
+        transition: all 0.2s ease;
+    }
+    
+    .remove-choice:hover {
+        background-color: var(--accent-color);
+        color: white;
+        border-color: var(--accent-color);
+    }
+    
+    .action-buttons {
+        margin-top: 2rem;
+    }
+    
+    .form-label {
+        font-weight: 500;
+        color: var(--dark-color);
+        margin-bottom: 0.5rem;
+    }
+    
+    .error-feedback {
+        color: var(--accent-color);
+        font-size: 0.875rem;
+        margin-top: 0.25rem;
+    }
+    
+    #add-choice {
+        display: inline-flex;
+        align-items: center;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+    
+    #add-choice:hover {
+        transform: translateY(-2px);
+    }
+    
+    #add-choice:before {
+        content: "+";
+        display: inline-block;
+        margin-right: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    
+    .submit-btn {
+        padding: 0.75rem 2rem;
+        font-weight: 600;
+        font-size: 1.1rem;
+        box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+        transition: all 0.3s ease;
+    }
+    
+    .submit-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(52, 152, 219, 0.4);
+    }
+    
+    .cancel-btn {
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+    
+    .cancel-btn:hover {
+        transform: translateY(-3px);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="poll-form-container">
+    <div class="card poll-card">
+        <div class="card-header form-header bg-primary text-white">
+            <h2 class="card-title">
+                <i class="fas fa-edit me-2"></i>Create New Poll
+            </h2>
+        </div>
+        <div class="card-body form-body">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="mb-4">
+                    <label for="{{ form.title.id_for_label }}" class="form-label">
+                        <i class="fas fa-heading me-2"></i>Poll Title
+                    </label>
+                    {{ form.title }}
+                    {% if form.title.errors %}
+                        <div class="error-feedback">
+                            {% for error in form.title.errors %}
+                                <i class="fas fa-exclamation-circle me-1"></i>{{ error }}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+
+                <!-- Add image upload field -->
+                <div class="mb-4">
+                    <label for="{{ form.poll_image.id_for_label }}" class="form-label">
+                        <i class="fas fa-image me-2"></i>Poll Image (Optional)
+                    </label>
+                    {{ form.poll_image }}
+                    {% if form.poll_image.errors %}
+                        <div class="error-feedback">
+                            {% for error in form.poll_image.errors %}
+                                <i class="fas fa-exclamation-circle me-1"></i>{{ error }}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                    <small class="form-text text-muted">
+                        Upload an optional image for your poll (jpg, png, gif)
+                    </small>
+                </div>
+
+                <div class="mb-4">
+                    <label for="{{ form.description.id_for_label }}" class="form-label">
+                        <i class="fas fa-align-left me-2"></i>Description
+                    </label>
+                    {{ form.description }}
+                    {% if form.description.errors %}
+                        <div class="error-feedback">
+                            {% for error in form.description.errors %}
+                                <i class="fas fa-exclamation-circle me-1"></i>{{ error }}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="mb-4">
+                    <label for="{{ form.end_date.id_for_label }}" class="form-label">
+                        <i class="fas fa-calendar-alt me-2"></i>Closing Date
+                    </label>
+                    {{ form.end_date }}
+                    {% if form.end_date.errors %}
+                        <div class="error-feedback">
+                            {% for error in form.end_date.errors %}
+                                <i class="fas fa-exclamation-circle me-1"></i>{{ error }}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+                
+                <div class="section-divider">
+                    <h3><i class="fas fa-list-ul me-2"></i>Poll Choices</h3>
+                </div>
+                
+                <div id="choices-container">
+                    {{ choices.management_form }}
+                    {% for choice_form in choices.forms %}
+                        <div class="choice-form">
+                            {% if forloop.first %}
+                                {% for hidden in choice_form.hidden_fields %}
+                                    {{ hidden }}
+                                {% endfor %}
+                            {% endif %}
+                            <div class="input-group">
+                                <label class="input-group-text">
+                                    <i class="fas fa-check-circle me-1"></i>Choice {{ forloop.counter }}
+                                </label>
+                                {{ choice_form.text }}
+                                {% if not forloop.first %}
+                                    <button type="button" class="btn btn-outline-danger remove-choice btn-choice">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                {% endif %}
+                            </div>
+                            {% if choice_form.text.errors %}
+                                <div class="error-feedback">
+                                    {% for error in choice_form.text.errors %}
+                                        <i class="fas fa-exclamation-circle me-1"></i>{{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+                
+                <button type="button" class="btn btn-outline-secondary mt-2 mb-4" id="add-choice">
+                    Add Another Choice
+                </button>
+                
+                <div class="action-buttons d-grid gap-3">
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <i class="fas fa-paper-plane me-2"></i>Create Poll
+                    </button>
+                    <a href="{% url 'poll_list' %}" class="btn btn-outline-secondary cancel-btn">
+                        <i class="fas fa-times me-2"></i>Cancel
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const container = document.getElementById('choices-container');
+        const addButton = document.getElementById('add-choice');
+        const totalForms = document.getElementById('id_choices-TOTAL_FORMS');
+        
+        // Add form
+        addButton.addEventListener('click', function() {
+            const formCount = parseInt(totalForms.value);
+            const newForm = container.querySelector('.choice-form').cloneNode(true);
+            
+            // Update form index
+            newForm.innerHTML = newForm.innerHTML.replace(/choices-0/g, `choices-${formCount}`);
+            newForm.innerHTML = newForm.innerHTML.replace(/Choice 1/g, `Choice ${formCount + 1}`);
+            
+            // Clear input value
+            const input = newForm.querySelector('input[type="text"]');
+            input.value = '';
+            
+            // Add remove button if not present
+            if (!newForm.querySelector('.remove-choice')) {
+                const inputGroup = newForm.querySelector('.input-group');
+                const removeBtn = document.createElement('button');
+                removeBtn.type = 'button';
+                removeBtn.className = 'btn btn-outline-danger remove-choice btn-choice';
+                removeBtn.innerHTML = '<i class="fas fa-times"></i>';
+                inputGroup.appendChild(removeBtn);
+            }
+            
+            // Append new form and update count
+            container.appendChild(newForm);
+            totalForms.value = formCount + 1;
+            
+            // Add event listener to new remove button
+            newForm.querySelector('.remove-choice').addEventListener('click', function() {
+                newForm.remove();
+                updateForms();
+            });
+        });
+        
+        // Remove form (for dynamically added forms)
+        container.addEventListener('click', function(e) {
+            if (e.target.classList.contains('remove-choice') || e.target.parentElement.classList.contains('remove-choice')) {
+                const formElement = e.target.closest('.choice-form');
+                formElement.style.opacity = '0';
+                setTimeout(() => {
+                    formElement.remove();
+                    updateForms();
+                }, 300);
+            }
+        });
+        
+        // Update form indices after removal
+        function updateForms() {
+            const forms = container.querySelectorAll('.choice-form');
+            const formCount = forms.length;
+            totalForms.value = formCount;
+            
+            forms.forEach((form, index) => {
+                const label = form.querySelector('.input-group-text');
+                label.innerHTML = '<i class="fas fa-check-circle me-1"></i>Choice ' + (index + 1);
+            });
+        }
+        
+        // Apply Bootstrap classes to Django form widgets
+        document.querySelectorAll('input[type="text"], input[type="email"], textarea').forEach(input => {
+            input.classList.add('form-control');
+        });
+        
+        document.querySelectorAll('input[type="datetime-local"]').forEach(input => {
+            input.classList.add('form-control');
+        });
+        
+        // Add smooth transition for choice removal
+        document.querySelectorAll('.choice-form').forEach(form => {
+            form.style.transition = 'all 0.3s ease';
+        });
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Online Voting System{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+            padding: 0.8rem 0;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            font-size: 1.4rem;
+        }
+        
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            padding: 0.6rem 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .navbar-nav .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: white;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        
+        .navbar-nav .nav-link:hover:after {
+            width: 70%;
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: white;
+        }
+        
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        .alert {
+            border-radius: 8px;
+            border-left: 4px solid transparent;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+        
+        .alert-success {
+            border-left-color: #2ecc71;
+        }
+        
+        .alert-warning {
+            border-left-color: #f39c12;
+        }
+        
+        .alert-danger {
+            border-left-color: #e74c3c;
+        }
+        
+        .alert-info {
+            border-left-color: #3498db;
+        }
+        
+        .main-content {
+            flex: 1;
+            padding: 1.5rem 0;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            overflow: hidden;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn {
+            border-radius: 6px;
+            padding: 0.5rem 1.25rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: #2980b9;
+            border-color: #2980b9;
+        }
+        
+        footer {
+            background-color: var(--primary-color) !important;
+            color: white !important;
+            padding: 1.5rem 0 !important;
+            margin-top: auto;
+        }
+        
+        footer p {
+            margin-bottom: 0;
+            color: rgba(255, 255, 255, 0.8) !important;
+        }
+        
+        /* Additional styles for homepage content */
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 4rem 0;
+            margin-bottom: 3rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .hero-section h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-section p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            height: 100%;
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover .feature-icon {
+            transform: scale(1.2);
+        }
+        
+        .recent-polls {
+            margin-top: 3rem;
+        }
+        
+        .poll-card {
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        .voting-stats {
+            background-color: var(--light-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 0;
+        }
+        
+        .stat-label {
+            color: var(--dark-color);
+            font-weight: 500;
+        }
+    </style>
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'index' %}">
+                <i class="fas fa-vote-yea me-2"></i>Online Voting System
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'index' %}">
+                            <i class="fas fa-home me-1"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'poll_list' %}">
+                            <i class="fas fa-list-alt me-1"></i> Polls
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'poll_create' %}">
+                            <i class="fas fa-plus-circle me-1"></i> Create Poll
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main-content">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }} alert-dismissible fade show">
+                    {% if message.tags == 'success' %}
+                        <i class="fas fa-check-circle me-2"></i>
+                    {% elif message.tags == 'warning' %}
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                    {% elif message.tags == 'danger' %}
+                        <i class="fas fa-times-circle me-2"></i>
+                    {% elif message.tags == 'info' %}
+                        <i class="fas fa-info-circle me-2"></i>
+                    {% endif %}
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {% endfor %}
+        {% endif %}
+        
+        {% block content %}
+        <!-- Homepage Content Start -->
+        <div class="hero-section">
+            <h1>Make Your Voice Heard</h1>
+            <p>A secure, transparent, and easy-to-use online voting platform for organizations, communities, and events of any size.</p>
+            <a href="{% url 'poll_create' %}" class="btn btn-light btn-lg">
+                <i class="fas fa-plus-circle me-2"></i>Create a Poll
+            </a>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card">
+                    <i class="fas fa-shield-alt feature-icon"></i>
+                    <h3>Secure Voting</h3>
+                    <p>Advanced encryption and authentication protocols ensure your votes remain private and tamper-proof.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card">
+                    <i class="fas fa-chart-bar feature-icon"></i>
+                    <h3>Real-time Results</h3>
+                    <p>Watch as results update instantly with beautiful, interactive charts and detailed analytics.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card">
+                    <i class="fas fa-users feature-icon"></i>
+                    <h3>Easy Participation</h3>
+                    <p>Simple interface allows anyone to create polls or cast votes without technical expertise.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="recent-polls">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2><i class="fas fa-fire me-2"></i>Trending Polls</h2>
+                <a href="{% url 'poll_list' %}" class="btn btn-outline-primary">View All</a>
+            </div>
+            
+            <div class="row">
+                {% if recent_polls %}
+                    {% for poll in recent_polls %}
+                    <div class="col-md-6 mb-4">
+                        <div class="card poll-card">
+                            <div class="card-body">
+                                <h4>{{ poll.title }}</h4>
+                                <p class="text-muted">Created by {{ poll.created_by }} on {{ poll.created_at|date:"M d, Y" }}</p>
+                                <div class="d-flex justify-content-between mt-3">
+                                    <span><i class="fas fa-user-check me-1"></i> {{ poll.total_votes }} votes</span>
+                                    <a href="{% url 'poll_detail' poll.id %}" class="btn btn-sm btn-primary">Vote Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body text-center py-5">
+                                <i class="fas fa-poll fa-3x text-muted mb-3"></i>
+                                <h4>No active polls yet</h4>
+                                <p>Be the first to create a poll and start collecting votes!</p>
+                                <a href="{% url 'poll_create' %}" class="btn btn-primary mt-2">Create Poll</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="voting-stats">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <p class="stat-number">{{ stats.total_polls }}</p>
+                    <p class="stat-label">Total Polls</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <p class="stat-number">{{ stats.total_votes }}</p>
+                    <p class="stat-label">Votes Cast</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="stat-number">{{ stats.active_polls }}</p>
+                    <p class="stat-label">Active Polls</p>
+                </div>
+            </div>
+        </div>
+        <!-- Homepage Content End -->
+        {% endblock %}
+    </div>
+
+    <footer class="py-3 text-center">
+        <div class="container">
+            <p>© 2025 Online Voting System | <i class="fas fa-shield-alt me-1"></i> Secure & Transparent Voting</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>
